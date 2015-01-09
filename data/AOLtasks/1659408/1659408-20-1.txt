@@ -1,0 +1,3 @@
+57	house rentals
+58	aparments
+59	apartments

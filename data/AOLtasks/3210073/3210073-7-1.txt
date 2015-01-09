@@ -1,0 +1,8 @@
+23	indian rhinoceros
+32	rhinoceros
+33	rhino
+34	indian rhino
+35	indian rhinoceros
+36	rhinoceros
+37	indian rhinoceros
+38	indian rhino

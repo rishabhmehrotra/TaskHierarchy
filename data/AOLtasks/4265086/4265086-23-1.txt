@@ -1,0 +1,4 @@
+102	20 ft motor homes
+103	20 ft motorhomes
+104	rv's
+105	vanguard

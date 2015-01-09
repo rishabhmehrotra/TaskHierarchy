@@ -1,0 +1,2 @@
+30	sudoko
+31	suduko

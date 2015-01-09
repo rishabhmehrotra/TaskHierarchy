@@ -1,0 +1,5 @@
+8	channel j12
+9	channal j12 watch
+10	channel j12 watch
+11	channel.com
+12	chanel j12

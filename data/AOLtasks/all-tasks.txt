@@ -1,0 +1,1424 @@
+117514	1	1	1	garden botanika.com
+117514	1	1	3	garden botanika
+117514	1	2	5	disney direct.com
+117514	1	2	6	disney store
+117514	2	1	9	six flages over georgia
+117514	2	1	10	six flags over georgia
+117514	2	1	15	six flags over georgia
+117514	2	2	19	fernbank
+117514	2	3	13	stone mountain park
+117514	3	1	21	gwinnette county fair
+117514	3	1	22	gwinnett county fair
+117514	3	2	24	pbs.org
+117514	3	3	35	precious momunts
+117514	3	3	36	precious moments
+117514	3	4	32	salute your shorts
+117514	3	5	26	doug nick
+117514	3	6	29	wishbone 1995
+117514	5	1	40	precious momounts
+117514	5	1	41	precious moments
+117514	5	2	52	willaim kennedy smith
+117514	5	2	53	william kennedy smith
+117514	5	2	62	michael lemoyne kennedy
+117514	5	2	65	michael kennedy
+117514	5	2	66	robert francis kennedy
+117514	5	2	72	robert f kennedy jr
+117514	5	2	73	bobby kennedy jr
+117514	5	2	76	rfk
+117514	5	2	78	jfk
+117514	5	2	79	rfk
+117514	5	2	81	ted kennedy
+117514	5	2	90	the kennedy family
+117514	5	2	96	the kennedy family
+117514	5	3	108	martha moxley
+117514	5	3	113	murder in greenwich
+117514	5	3	114	murder in greenwich martha moxley
+117514	5	4	83	orphan trains
+117514	5	4	86	orphans
+117514	5	4	88	pbs.org
+117514	6	1	115	kristina coccia
+117514	6	1	118	carly patterson
+117514	7	1	122	christy henrich
+117514	7	1	124	juliasa gomez
+117514	7	1	125	julissa gomez
+117514	8	1	141	julissa gomez
+117514	8	1	144	gymanstics
+117514	8	1	145	gymnastics
+117514	8	2	154	eric harris
+117514	8	2	155	reb and vodka
+117514	8	2	160	reb and vodka
+117514	8	2	162	eric and dylan
+117514	8	2	164	eric and dylan
+117514	8	3	166	william kenendy smith
+117514	8	3	167	william kennedy smith
+117514	8	3	179	the kennedys
+117514	8	3	182	robert kennedy
+117514	8	3	183	robert francis kenendy
+117514	8	3	184	robert francis kennedy
+117514	8	3	185	jfk remembered.com
+117514	8	3	187	www.jfk remembered.com
+117514	8	3	188	www.jfkremembered.com
+117514	8	3	190	jfk
+117514	8	3	191	dealey plaza
+117514	8	3	193	robert kennedy jr
+117514	8	3	201	robert kennedy jr
+117514	8	4	208	the o.j. simpson story 1995
+117514	8	4	212	o.j. simpson
+117514	10	1	227	tom hanks
+117514	11	1	235	laura ingles wilder
+117514	11	1	239	little house in the big woods
+117514	11	2	229	helen georgia
+117514	11	2	233	helen georgia
+117514	11	3	232	forest gump 1994
+117514	12	1	253	litlle house
+117514	12	1	254	little house
+117514	13	1	263	for gump 1994
+117514	13	1	266	forest gump 1994
+117514	14	1	269	forest gump 1994
+117514	14	1	271	forest gump 1994
+117514	14	2	273	carly patterson
+117514	14	2	275	shannon miller
+117514	14	2	280	kristina coccia
+117514	14	2	282	nicole harris
+117514	14	2	285	carly patterson
+117514	14	2	287	courtney kupets
+117514	14	2	289	courtney kupets
+117514	14	3	267	terra radio
+117514	14	3	270	terra radio
+117514	15	1	299	atlanta botinacial gardens
+117514	15	1	300	atlanta botanical gardens
+117514	16	1	303	sci trek
+117514	16	1	304	scitrek
+117514	16	1	309	scitrek
+117514	16	1	316	scitrek museum
+117514	20	1	357	eric harris
+117514	20	1	361	columbine high school
+117514	21	1	390	columbine
+117514	21	1	391	lauren dawn towensend
+117514	21	1	392	laura dawn townsend
+117514	21	1	393	laura townsend
+117514	21	1	394	lauren townsend
+117514	21	1	397	www.columbine-memorial.org
+117514	21	1	398	lauren townsend
+117514	21	1	403	www.columbine-memorial.org
+117514	21	1	404	lauren dawn townsend
+117514	21	1	405	lauren townsend
+117514	21	1	411	lauren dawn townsend
+117514	21	1	412	laura dawn townsend
+117514	21	1	413	lauren dawn townsend
+117514	21	1	416	rachael joy scott
+117514	21	1	417	rachel joy scott
+117514	21	1	419	cassie bernall
+117514	21	2	364	neil entwhistle
+117514	21	2	365	neil entwistle
+117514	21	2	376	neil entwistle
+117514	22	1	434	brandon call
+117514	22	1	438	step by step
+117514	22	1	439	step by step 1991
+117514	22	1	440	brandon call
+117514	22	1	459	bronson pinchot
+117514	22	1	460	step by step tv show
+117514	22	1	467	jason marsden
+117514	23	1	476	william kennedy smith
+117514	23	1	493	bobby kennedy jr
+117514	23	1	495	robert francis kennedy
+117514	23	1	514	michael lemoyne kennedy
+117514	23	1	517	michael kennedy
+117514	23	1	518	bobby kennedy jr
+117514	23	1	520	william kennedy smith
+117514	23	2	487	steven culp
+117514	23	2	501	steven culp
+117514	23	2	511	steven culp
+117514	23	2	533	steven culp
+117514	23	2	540	steven culp
+117514	23	3	506	robert ray
+117514	23	3	507	robert ray plastic surgern
+117514	23	3	508	robert ray plastic surgery
+117514	23	4	526	eric harris
+117514	23	4	527	reb and vodka
+117514	23	4	531	dylan klebold
+117514	23	4	552	eric and dylan
+117514	23	5	543	ben johnson eric harris zero hour
+117514	23	5	547	ben johnson eric harris zero hour
+117514	24	1	561	bobby kennedy
+117514	24	1	562	bobby kennedy jr
+117514	24	1	563	bobby kennedy
+117514	24	1	564	bobby kennedy jr
+117514	24	1	565	robert francis kennedy
+117514	24	1	571	william kennedy smith
+117514	24	1	578	william kennedy smith
+117514	24	1	583	william kennedy smith
+117514	24	1	584	michael lemoyne kennedy
+117514	24	1	588	the kennedy family
+117514	24	1	590	robert kennedy
+117514	24	1	593	william kennedy smith
+117514	24	1	596	william kennedy smith
+117514	24	1	599	william kennedy smith
+117514	24	2	553	yahoo
+117514	24	2	554	yahoo music
+117514	24	2	572	terra radio
+117514	24	2	574	yahoo music
+117514	24	2	576	terra radio
+117514	24	2	594	yahoo music
+117514	24	3	557	steven culp
+117514	24	3	568	steven culp
+117514	24	4	558	blood fued 1983
+117514	24	4	559	blood feud 1983
+117514	25	1	623	john linder
+117514	25	1	624	http linder.house.gov
+117514	25	2	622	laura ingles wilder
+117514	25	2	626	laura ingles wilder
+117514	25	2	627	mary amiela wilder
+117514	25	2	628	mary amelia wilder
+117514	25	2	633	mary ingles
+117514	25	2	634	laura ingles wilder
+117514	25	3	612	michael lemoyne kennedy
+117514	25	3	617	william kennedy smith
+117514	25	4	643	blood fued 1983
+117514	25	4	644	blood feud 1983
+117514	25	5	614	steven culp
+117514	25	5	653	steven culp
+117514	25	6	637	samantha parkinton
+117514	25	6	638	samantha parkington
+117514	25	6	640	molly micintire
+117514	25	6	641	molly mcintire
+117514	25	7	619	dylan bennet klebold
+117514	25	7	620	dylan bennett klebold
+117514	25	8	646	cotter smith
+117514	25	9	609	helen georgia
+117514	28	1	674	precious memounts
+117514	28	1	675	precious moments
+117514	28	1	686	precious moments
+117514	28	2	683	carly patterson
+117514	28	2	687	terin humphrey
+16432891	1	1	1	spyaxe
+16432891	1	2	2	quad strengthining
+16432891	1	2	3	quadracep excercise
+16432891	1	2	4	quadricep exercise
+16432891	1	2	5	weak quads problems
+16432891	2	1	6	weak adductors
+16432891	4	1	9	weak adductors
+16432891	5	1	13	sosial security disability portland or.
+16432891	5	1	14	social security disability portland or.
+16432891	5	2	15	indications l3 and l4
+16432891	5	2	16	l3 and l4
+16432891	5	2	17	lumbar spine problems l3 l4
+16432891	5	2	18	unable to bend over
+16432891	5	3	19	plan examiner training portland or.
+16432891	5	4	21	belingham washington
+16432891	5	4	22	bellingham washington
+16432891	5	4	23	bellingham washington jobs
+16432891	5	5	24	pilates adductors
+16432891	5	5	26	pelvic center
+16432891	5	5	27	core workout
+16432891	6	1	30	sudoko
+16432891	6	1	31	suduko
+16432891	6	2	32	how to stengthen adductors
+16432891	6	2	34	how to work adductors
+16432891	7	1	39	muscle used when bending over
+16432891	7	1	40	pain when bending over
+16432891	7	2	41	milf
+16432891	7	2	42	oregon mothers want to fuck
+16432891	7	3	43	employment safeway
+16432891	7	3	49	northwest regional council of carpenters
+16432891	7	4	46	opiate detox
+16432891	7	5	47	suduko
+16432891	8	1	54	strengthening adductors
+16432891	8	1	57	tight and weak adductors
+16432891	8	1	61	weak core muscles
+16432891	8	1	64	exercise ball core
+16432891	9	1	65	problems caused by l3 l4
+16432891	9	1	67	diagnosis of l 4 l3
+16432891	10	1	68	worms in cats
+16432891	10	2	70	pilates movement hips
+16432891	10	2	73	hip immobility
+16432891	10	3	71	wikpedia suduko
+16432891	10	4	72	foot pronation
+16432891	11	1	75	hip immobility
+16432891	11	2	77	female masturbation pics
+16432891	12	1	78	lafave teacher pics
+16432891	13	1	81	www.ask.com
+16432891	14	1	82	www.pued.com
+16432891	15	1	83	regain movement in hips
+16432891	15	1	98	hips do not move
+16432891	15	2	90	core exercise
+16432891	15	2	96	exercise for core
+16432891	15	3	92	girl naked exercise
+16432891	15	4	97	relearn proper walking
+16432891	15	4	99	can not spread legs
+16432891	15	4	100	can not abduct legs
+16432891	15	4	101	cannot abduct legs
+16432891	15	5	102	l4 l3 symptoms
+16432891	15	6	103	social security disability for arthritis
+16432891	16	1	107	medical help without insurance
+16432891	16	1	108	drugs on line
+16432891	16	1	111	buying narcotics online
+16432891	16	1	113	carisoprodol
+16432891	17	1	114	can pain meds cause pain
+16432891	17	1	115	pain meds cause pain
+16432891	17	1	116	hydrocodone cause pain
+16432891	17	2	118	green taxi portland oregon
+16432891	17	2	119	earnings taxi drive portland oregon
+16432891	17	3	122	how to wean of narcotics
+16432891	17	3	125	drug rehab free oregon
+16432891	17	3	126	pain caused by narcotics
+16432891	17	4	127	www.pued.com
+16432891	18	1	129	movements that loosen hip joint
+16432891	19	1	143	tai chi loosen hip joint
+16432891	19	1	168	tai chi hips
+16432891	19	1	171	tai chi troutdale oregon
+16432891	19	2	144	public nudity
+16432891	19	2	145	uncensored nudes
+16432891	19	2	149	mothers shower
+16432891	19	2	150	mothers shower naked
+16432891	19	2	156	mothers shower
+16432891	19	2	157	teens shower naked
+16432891	19	2	164	beaver shot naked
+16432891	20	1	173	tila tequila
+16432891	21	1	174	pliates instruction
+16432891	21	1	175	pilates instruction
+16432891	21	2	178	how to use www for information
+16432891	21	2	179	how to use the internet
+16432891	22	1	181	how to do pilates
+16432891	22	2	182	effects of tide on columbia river
+16432891	22	2	184	does ocean tide affect columbia river
+16432891	23	1	185	video proffesor
+16432891	23	1	186	video professor
+16432891	23	2	187	how to get info on www.
+16432891	23	2	188	using the www.
+16432891	23	3	190	pilates
+16432891	23	4	192	www.galleyhost.com
+16432891	23	4	193	www.galleryhost.com
+16432891	23	4	195	www.galleyhost.com
+16432891	23	4	196	www.galleryhost.com
+16432891	24	1	198	www.google.com
+16432891	25	1	200	www.maestro toys.com
+16432891	25	1	201	www.maestrotoys.com
+16432891	25	2	202	pilates
+16432891	25	2	203	pilatesinstruction pics
+16432891	25	2	204	pilates instruction pics
+16432891	25	3	205	pics womens legs apart
+16432891	25	4	208	muscles used to crawl
+16432891	25	4	210	muscles used to crawl on knees
+16432891	25	4	211	crawling knees muscles
+16432891	25	4	213	crawling muscle rehab
+16432891	26	1	219	www.workinginoregon.org ocs
+16432891	27	1	220	nascar
+16432891	28	1	221	www.pilatesteacher.com
+16432891	28	1	222	pilates information
+16432891	28	1	225	psoas weak
+16432891	29	1	258	ass lickers pics
+16432891	30	1	261	thomas test
+16432891	30	1	263	therapy for fixed flexion deformity
+16432891	30	1	264	hip fixed flexion deformity
+16432891	30	1	266	hip fixed flexion deformity therapy
+16432891	30	1	267	therapy fixed flexible hip deformity
+16432891	30	1	268	tight inflexable psoas
+16432891	30	1	269	tight inflexible psoas
+16432891	31	1	276	upper cross syndrome
+16432891	31	1	277	lower cross syndrome
+16432891	31	1	279	lower cross syndrome exercises
+16432891	31	2	280	hip flexor exercises
+1659408	1	1	1	rp
+1659408	1	1	2	eye diseases
+1659408	2	1	3	eye diseasese
+1659408	4	1	5	map quest
+1659408	5	1	6	fromm puppy dog food
+1659408	5	1	7	hills dog food
+1659408	6	1	8	chattanoga tennesee st jude telethone
+1659408	6	1	9	chattanooga tennessee st jude telethon
+1659408	6	1	15	st jude telethone
+1659408	6	1	16	st jude telethon
+1659408	6	2	11	us101 radio station
+1659408	6	2	12	us 101 radio station
+1659408	6	2	13	us 101 radio station chattanoga tennesee
+1659408	6	2	14	us 101 radio station chattanooga tennessee
+1659408	7	1	17	ladypurple
+1659408	7	1	18	lady purple
+1659408	7	1	20	ladypurple
+1659408	7	1	21	lady purple
+1659408	8	1	22	patterson ny
+1659408	9	1	23	guide horse
+1659408	9	1	24	guide horse schools
+1659408	14	1	33	the cost of haveing a horse in new york
+1659408	14	1	34	the cost of having a horse in new york
+1659408	14	1	35	what does it cost to have a horse in new york
+1659408	14	1	36	cost to have a horse
+1659408	15	1	37	farm houses for rent in broom county
+1659408	15	1	38	farm houses for rent in broome county
+1659408	15	2	41	velvie revolver
+1659408	15	2	42	velvet revolver
+1659408	17	1	51	house rentals in binghamton new york
+1659408	17	1	53	binghamton new york newspaper
+1659408	19	1	55	purinao.n.e.
+1659408	19	1	56	purina
+1659408	20	1	57	house rentals
+1659408	20	1	58	aparments
+1659408	20	1	59	apartments
+1659408	21	1	61	remax realeters
+1659408	21	1	62	remax realtors
+1659408	23	1	68	the cost of haveing a horse
+1659408	23	1	69	the cost of haveing a horse and the care
+1659408	24	1	72	what is a guide dog
+1659408	24	1	73	what is a guide dog for the blind
+1659408	24	1	74	gow my guide dog helps me
+1659408	24	1	75	how my guide dog helps me
+1659408	24	2	70	list all eye diseases
+1659408	26	1	81	guiding eyes
+1659408	26	1	82	guiding eyes breeding center
+1659408	26	2	85	labradors for sale
+1659408	26	3	87	binghamton newspaper
+1659408	29	1	93	binghamton newspaper
+1659408	29	1	95	binghamton newspaper
+1659408	30	1	96	game house
+1659408	30	1	97	mahjong garden
+1659408	31	1	100	elder beatles
+1659408	31	1	101	box elder beatles
+1659408	32	1	104	game house
+1659408	32	1	105	pogo
+1659408	32	1	106	mahjong garden
+1659408	33	1	107	list all eye diseases that are caused by birds
+1659408	35	1	110	pet depo
+1659408	35	1	111	pet smart
+1659408	35	1	113	pet stores
+1659408	35	2	112	super pages
+1659408	35	2	114	super pages
+1659408	38	1	118	andy williams
+1659408	38	1	119	dean martin
+1659408	39	1	120	game house
+1659408	39	1	121	mahjong garden
+1659408	43	1	130	hisloplasmosis
+1659408	43	1	131	histoplasmosis
+1659408	43	1	132	histoplasmosis of the eyes
+1659408	47	1	139	project paw inc
+1659408	47	2	140	the show house
+18289783	1	1	1	very sexy boys
+18289783	1	1	2	very sexy hot boys
+18289783	1	1	3	sexy boys
+18289783	1	1	16	boys shrithless
+18289783	1	1	17	boys shirtless
+18289783	1	1	18	hot boys shirtless
+18289783	1	2	7	sugar free engery fuel
+18289783	1	2	8	sugar free energy fuel
+18289783	1	3	9	swicth board
+18289783	1	3	10	switchboard
+18289783	1	4	11	listen to lotta love
+18289783	1	4	12	listen to nicolette larson lotta love
+18289783	2	1	27	aol.clo
+18289783	2	1	28	aol..com
+18289783	2	2	29	jason whael
+18289783	2	2	30	jason wahl
+18289783	2	2	31	jason wahler
+18289783	2	2	32	jason wahler shirtless
+18289783	2	2	33	jason wahler
+18289783	2	3	34	ryan gosling
+18289783	2	3	47	ryan gosling cont
+18289783	2	3	48	ryan gosling contact
+18289783	2	4	53	spin and win
+18289783	3	1	54	listen ot crazy frog
+18289783	3	1	55	listen to crazy frog
+18289783	3	1	56	listen to lotta love
+18289783	3	2	57	listen to lotta love nickltte larson
+18289783	3	2	58	listen to lotta love nicolette larson
+1901902	1	1	2	asos
+1901902	1	1	3	karmaloop
+1901902	1	1	5	buckle inc
+1901902	1	1	6	ifashionmall
+1901902	1	1	7	urban outfitters
+1901902	1	1	8	karmaloop
+1901902	1	2	4	lynn item
+1901902	1	3	1	mass.lottery
+1901902	2	1	9	revolve clothing
+1901902	2	1	10	karmaloop
+1901902	2	1	11	asos
+1901902	3	1	12	buckle inc
+1901902	3	1	13	karmaloop
+1901902	3	1	14	urban outfitters
+1901902	3	1	15	ifashionmall
+1901902	3	2	16	lowell sun
+1901902	4	1	17	mass.lottery
+1901902	4	2	24	billerica minute man
+1901902	4	3	25	nhra
+1901902	4	4	18	buckle inc
+1901902	4	4	19	asos
+1901902	4	4	20	karmaloop
+1901902	4	4	21	urban outfitters
+1901902	4	4	22	ifashionmall
+1901902	4	4	23	revolve clothing
+1901902	4	4	26	earl woven jeans
+1901902	4	4	28	mens earl woven jeans
+1901902	4	4	29	universal gear
+1901902	5	1	30	lynn item
+1901902	5	2	31	asos
+1901902	6	1	33	lowell sun
+1901902	6	1	34	billerica minute man
+1901902	6	2	32	buckle inc
+1901902	6	2	35	karmaloop
+1901902	6	2	36	urban outfitters
+1901902	6	2	37	ifashionmall
+1901902	6	2	38	revolve clothing
+1901902	7	1	39	buckle inc
+1901902	7	1	40	karmaloop
+1901902	7	1	41	urban outfitters
+1901902	7	1	42	ifashionmall
+1901902	7	1	43	asos
+1901902	8	1	47	z-brand
+1901902	8	1	48	relic riccardi
+1901902	8	1	49	motley
+1901902	8	1	50	z-brand motley
+1901902	8	1	52	z-brand chantal
+1901902	8	1	53	z-brand
+1901902	8	1	54	z-brand great put on
+1901902	8	1	56	z-brand sports odyssey
+1901902	8	2	44	mass.lottery
+1901902	8	3	45	buckle inc
+1901902	8	3	58	karmaloop
+1901902	8	4	46	billy lane
+1901902	9	1	60	asos
+1901902	9	1	61	buckle inc
+1901902	9	1	62	ifashionmall
+1901902	9	1	63	karmaloop
+1901902	9	1	64	z-brand chantal
+1901902	9	2	59	lynn item
+1901902	10	1	65	z-brand motley
+1901902	10	1	66	asos
+1901902	10	1	68	lucky brand
+1901902	10	1	70	buckle inc
+1901902	10	1	71	karmaloop
+1901902	10	1	72	revolve clothing
+1901902	10	1	73	universal gear
+1901902	10	1	74	g-star camo
+1901902	10	2	67	lowell sun
+1901902	11	1	76	lowell sun
+1901902	11	1	79	lowell sun
+1901902	11	1	82	billerica minute man
+1901902	11	2	75	buckle inc
+1901902	11	2	77	karmaloop
+1901902	11	2	78	urban outfitters
+1901902	11	2	80	guess jeans
+1901902	11	2	81	asos
+1901902	11	2	83	ifashionmall
+1901902	11	3	84	home depot
+1901902	12	1	85	buckle inc
+1901902	12	1	86	karmaloop
+1901902	12	1	87	urban outfitters
+1901902	12	1	88	asos
+1901902	13	1	90	buckle inc
+1901902	13	1	91	karmaloop
+1901902	13	1	92	urban outfitters
+1901902	13	1	93	asos
+1901902	13	1	94	ifashionmall
+1901902	13	2	89	mass.lottery
+1901902	14	1	98	metlife
+1901902	14	2	96	lynn item
+1901902	14	3	97	buckle inc
+1901902	14	3	99	ifashionmall
+1901902	14	3	102	karmaloop
+1901902	14	3	103	urban outfitters
+1901902	15	1	104	asos
+1901902	15	1	107	revolve clothing
+1901902	15	1	108	karmaloop
+1901902	15	1	109	futurgarb
+1901902	15	1	110	ifashionmall
+1901902	15	2	105	nhra
+1901902	15	3	106	lowell sun
+1901902	16	1	112	karmaloop
+1901902	16	1	113	urban outfitters
+1901902	16	2	111	mass.lottery
+1901902	17	1	115	asos
+1901902	17	1	116	buckle inc
+1901902	17	1	117	ifashionmall
+1901902	17	1	118	karmaloop
+1901902	17	1	119	urban outfitters
+1901902	17	1	120	revolve clothing
+1901902	17	1	121	triple 5 soul clothing
+1901902	17	2	124	lowell sun
+1901902	18	1	125	karmaloop
+1901902	18	1	126	z-brand chantal
+1901902	18	1	127	ups tracking
+1901902	18	1	128	guess factory
+1901902	18	1	129	guess jeans
+1901902	19	1	130	mass.lottery
+1901902	20	1	132	asos
+1901902	20	1	133	karmaloop
+1901902	20	1	134	buckle inc
+1901902	20	1	135	ifashionmall
+1901902	20	2	131	lynn item
+1901902	21	1	136	buckle inc
+1901902	21	1	137	asos
+1901902	21	1	138	karmaloop
+1901902	21	1	139	urban outfitters
+1901902	21	1	140	ifashionmall
+1901902	21	1	141	revolve clothing
+1901902	21	2	142	lowell sun
+1901902	22	1	144	united health care
+1901902	22	1	145	g.e. united health care
+1901902	22	2	143	buckle inc
+1901902	22	2	147	asos
+1901902	22	2	148	karmaloop
+1901902	23	1	150	ufc
+1901902	23	2	149	mass.lottery
+1901902	23	3	151	buckle inc
+1901902	23	3	152	ifashionmall
+1901902	23	3	153	karmaloop
+1901902	23	3	154	urban outfitters
+1901902	23	3	155	revolve clothing
+1901902	24	1	157	asos
+1901902	24	1	158	buckle inc
+1901902	24	1	159	karmaloop
+1901902	24	1	160	ifashionmall
+1901902	24	1	161	urban outfitters
+1901902	24	2	156	lynn item
+1901902	25	1	163	buckle inc
+1901902	25	1	164	asos
+1901902	25	1	166	karmaloop
+1901902	25	1	167	urban outfitters
+1901902	25	1	168	hollister
+1901902	25	2	162	lowell sun
+1901902	25	3	165	nhra
+1901902	26	1	169	buckle inc
+1901902	27	1	171	buckle inc
+1901902	27	1	172	karmaloop
+1901902	27	1	173	urban outfitters
+1901902	27	1	174	ifashionmall
+1901902	27	1	175	buckle inc
+1901902	27	2	170	mass.lottery
+1901902	28	1	176	lynn item
+1901902	28	2	177	ifashionmall
+1901902	29	1	178	buckle inc
+1901902	29	1	179	karmaloop
+1901902	29	1	180	urban outfitters
+1901902	29	1	181	bagga menswear
+1901902	29	1	182	asos
+1901902	29	1	183	zappos
+1901902	30	1	184	asos
+1901902	30	1	186	karmaloop
+1901902	30	1	187	urban outfitters
+1901902	30	1	189	g-string
+1901902	30	1	190	guess factory
+1901902	30	2	185	lowell sun
+1901902	30	3	188	sears
+1901902	31	1	193	buckle inc
+1901902	31	1	194	karmaloop
+1901902	31	1	195	revolve clothing
+1901902	31	1	196	ifashionmall
+1901902	32	1	197	ups tracking
+1901902	32	2	198	buckle inc
+1901902	33	1	199	mass.lottery
+1901902	33	2	202	buckle inc
+1901902	33	2	203	karmaloop
+2199573	1	1	1	family healthplus
+2199573	2	1	2	travelocity
+2199573	3	1	3	hotmail
+2199573	3	2	4	ebay
+2199573	3	3	5	resurrection ascension church in rego park queens
+2199573	4	1	6	razr phone has lines across screen
+2199573	4	1	7	my razr phone has lines across screen
+2199573	5	1	8	channel j12
+2199573	5	1	9	channal j12 watch
+2199573	5	1	10	channel j12 watch
+2199573	5	1	11	channel.com
+2199573	5	1	12	chanel j12
+2199573	5	2	13	york photo
+2199573	5	3	14	world poker tour
+2199573	5	3	15	eli elezra
+2199573	5	3	16	eli elezra's address
+2199573	5	3	17	eli elezra
+2199573	6	1	18	commerce online
+2199573	7	1	19	hotjobs.cm
+2199573	7	2	20	ny daily news
+2199573	7	2	21	el diario
+2199573	8	1	23	just jared
+2199573	8	1	24	egotastic
+2199573	9	1	25	ny lotto
+2199573	9	2	26	7 eleven
+2199573	10	1	27	commerce online
+2199573	10	1	28	carol wright gifts
+2199573	11	1	29	nadine purdy
+2199573	11	1	31	purdy girl
+2199573	12	1	34	commerce online
+2199573	12	1	35	astoria federal
+2199573	13	1	36	just jared
+2199573	13	1	37	egotastic
+2199573	13	1	38	popsugar
+2199573	13	2	39	commerce online
+2199573	15	1	41	pancreas
+2199573	15	1	46	what does pancreas do
+2199573	15	2	43	girls club of new york
+2199573	15	3	45	cnn.com
+2199573	15	3	47	ny daily news
+2199573	15	3	51	ny daily news
+2199573	15	4	48	imette st. guillen
+2199573	15	5	53	scott trade
+2199573	16	1	54	reegaton top ten
+2199573	16	1	55	reegaeton top ten
+2199573	16	1	56	reggaeton top ten
+2199573	17	1	59	rythmic shes
+2199573	17	1	60	rythmic shoes
+2199573	17	1	62	capezio
+2199573	17	1	68	half shoe for gymnastics
+2199573	17	1	70	bleyer rythmic gymnastics shoe
+2199573	19	1	77	gymnastic rythmic half shoes
+2199573	19	1	78	gymnastic caps
+2199573	20	1	82	viking spas
+2199573	20	1	86	harrows clearance center
+2199573	20	1	87	reflections vscru52a
+2199573	20	1	88	reflections vscru52a spa
+2199573	20	1	89	jacuzzi jpj355x120
+2199573	20	1	90	jacuzzi
+2199573	20	1	91	down east spas
+2199573	25	1	97	gymnastic rythmic shoes
+2199573	25	1	104	gymnastic rythmic shoes
+2199573	25	1	105	capezio
+2199573	25	1	106	half cap shoe
+2199573	25	1	108	grishko
+2199573	25	1	110	capezio pirouette for children
+2199573	25	2	107	yahoo shopping
+2199573	25	2	111	yahoo shopping
+2199573	26	1	114	putting house in minor's name
+2199573	26	1	115	putting assests in children's names
+2199573	26	1	116	putting assets in children's names
+2199573	28	1	124	should i travel to africa with my child
+2199573	28	1	125	traveling to africa with children
+2199573	28	2	132	bleyer toe slipper
+2199573	28	2	142	gymnastic shoes
+2199573	28	2	146	gymnastic toe slippers
+2199573	28	2	154	www.girlzthing.net
+2199573	28	2	155	gymnastic shoes
+2199573	28	2	164	rythmic shoes
+2199573	28	2	168	iwa shoes
+2199573	28	2	169	bleyer toe caps
+2199573	28	2	171	bleyer shoes
+2199573	28	2	172	bleyer slippers
+2199573	28	2	180	gibson sports
+2199573	28	3	129	commerce online
+2199573	28	3	130	astoria federal savings
+2199573	28	3	131	citigroup
+2199573	30	1	185	capezio
+2199573	30	1	186	capezio pirouette
+2199573	31	1	195	lying on healthplus application
+2199573	31	1	197	what if my income increases while i am enrolled in family healthplus
+2199573	36	1	208	albi clad 800
+2199573	36	1	209	fireproofing mastic
+2199573	36	1	210	fireproofing mastic ny
+2199573	36	1	211	fireproofing mastic suppliers ny
+2651358	2	1	23	psychologist leshan
+2651358	2	1	24	psychologist era leshan
+2651358	2	2	11	music composer brian ambient
+2651358	2	2	16	musical note below b
+2651358	5	1	59	1950's political mongrams
+2651358	5	1	60	1950's political candidates
+2651358	5	1	61	1950's political president candidates
+2651358	5	1	62	adelaid stevenson
+2651358	5	1	63	adelaid stevenson for president
+2651358	5	2	64	controversial fruit spray
+2651358	5	2	65	controversial fruit spray adar
+2651358	5	2	69	fruit spray alar
+2651358	5	3	48	baseballer's stickum
+2651358	5	3	49	baseballers stickum
+2651358	5	4	51	universal product identifier
+2651358	5	4	52	universal merchandise identifier
+2651358	5	5	71	dol. parts
+2651358	5	5	72	dol. parts points
+2651358	5	6	46	first name in soul
+2651358	5	6	47	first name in soul eretha
+2651358	6	1	74	alaska state map
+2651358	6	1	77	alaska state map niniltna
+2651358	6	1	79	niniltna alaska park or fiction
+2651358	7	1	82	over 400 million of them made since 1932
+2651358	7	1	86	zippo lighters 1932 over 400 million made
+2651358	7	2	89	crayola color since 1957
+2651358	7	2	91	crayola color introduced in 1957
+2651358	7	3	93	hops dryer
+2651358	7	3	94	hops dryer oast
+2651358	7	4	100	ooma chaplin
+2651358	7	4	103	chaplin
+2651358	7	4	104	chaplin wife
+2651358	9	1	110	recipes salmon entree
+2651358	9	1	115	recipes salmon glazes
+2651358	10	1	123	evil women group
+2651358	10	1	124	evil women song group
+2651358	10	1	125	evil women eno
+2651358	10	2	132	trojan rival
+2651358	10	2	133	trojan rival bruin
+2651358	10	3	134	mendelssohn symphony no. 3 key
+2651358	10	3	136	mendelssohn symphony no. 3 e minor key
+2651358	10	4	119	cbs sunday host charles
+2651358	10	4	127	charles ii mistress nell
+2651358	11	1	139	1950's 1960's senator tennessee
+2651358	11	1	142	1950's 1960's senator byrd tennessee
+2651358	11	1	144	senator tennessee robert byrd
+2651358	11	1	145	tennessee senator
+2651358	11	1	152	tennessee senator tyre
+2651358	11	2	150	spartacus oscar winmner
+2651358	11	2	151	spartacus oscar winner
+2651358	11	3	148	1954 east coast hurricane edna
+2651358	13	1	160	madre's hermana
+2651358	13	1	161	mexican to english dictionary
+2651358	13	1	173	spanish hermana
+2651358	14	1	176	inirt dictionary
+2651358	14	1	177	inert dictionary
+2651358	14	2	178	iris uvea
+2651358	16	1	184	composer satie
+2651358	16	1	185	b brandenburg concerti composer
+2651358	17	1	196	indonesian island timnr
+2651358	17	1	199	indonesian island timnr
+2651358	17	1	200	indonesian island timer
+2651358	17	2	194	ny yankee nickname aro
+2651358	17	2	195	ny yankee nickname arno
+2651358	17	2	197	ny yankee nickname arno
+2651358	17	2	198	ny yankee nickname areo
+2651358	17	3	188	novelist out of africa
+2651358	17	3	189	novelist out of africa dineson
+2651358	17	4	190	luanda
+2651358	17	5	192	benedictine title
+2651358	17	5	193	benedictine title dom
+2651358	18	1	203	new york yankee aroo
+2651358	18	1	204	new york yankee nickname aroo
+2651358	18	1	205	new york yankee nickname arod
+2651358	18	2	201	indonesian island
+2651358	19	1	209	kokomo indiana
+2651358	19	1	210	kokomo indiana dime
+2651358	19	1	212	kokomo indiana demo
+2651358	21	1	251	newt babe
+2651358	21	1	252	newt-born babe
+2651358	21	1	253	newt born babe
+2651358	21	1	254	newt baby
+2651358	21	2	242	matchsticks game
+2651358	21	2	249	matchsticks game
+2651358	21	2	250	matchsticks game nim
+3210073	1	1	4	yahooligans
+3210073	3	1	14	sesamestreetcentral
+3210073	3	1	15	sesamestreet
+3210073	3	2	12	funbrain
+3210073	4	1	20	nickelodeon
+3210073	5	1	21	yahooligans
+3210073	6	1	22	lego
+3210073	7	1	23	indian rhinoceros
+3210073	7	1	32	rhinoceros
+3210073	7	1	33	rhino
+3210073	7	1	34	indian rhino
+3210073	7	1	35	indian rhinoceros
+3210073	7	1	36	rhinoceros
+3210073	7	1	37	indian rhinoceros
+3210073	7	1	38	indian rhino
+3210073	8	1	42	thewiggles
+3210073	8	2	44	playhousedisney
+3210073	9	1	47	lego
+3210073	10	1	48	nickjr
+3210073	10	2	49	indian rhino
+3210073	11	1	61	tammt
+3210073	11	1	62	tammatown
+3210073	11	1	63	tamagochietown
+3210073	11	1	64	tamagochie games
+3210073	11	1	65	tamagochie.com
+3210073	11	2	66	yahooligans
+3210073	13	1	69	nickjr
+3210073	14	1	70	indian rhino
+3210073	15	1	80	tamagohchi
+3210073	15	1	81	tamagochie games
+3210073	15	1	82	tamagohchi
+3210073	15	1	83	tamagochie games
+3210073	16	1	84	indian rhino
+3210073	18	1	88	yahoo
+3210073	19	1	89	tagochie town
+3210073	19	1	90	tamagotchitown
+3210073	21	1	95	indian rhino
+3210073	26	1	105	noggin
+3210073	28	1	111	lego
+3210073	28	2	112	nick
+3210073	29	1	117	balamory
+3210073	30	1	120	nick
+3210073	31	1	125	readysetlearn
+3210073	32	1	126	tamagotchitown
+3210073	33	1	127	hotwheels
+3210073	34	1	129	thomasthetankengin
+3210073	34	1	130	thomasthetankengine
+3210073	35	1	132	sesamestreet
+3210073	35	2	133	generalhospitalhappeningstwo
+3210073	35	3	134	playhousedisney
+3210073	35	4	135	nickjr
+3210073	36	1	136	nick
+3210073	37	1	142	indian rhino
+3210073	38	1	144	nickelodeon
+3472343	1	1	1	lazyboy
+3472343	1	2	2	land for sale in michigan
+3472343	2	1	3	world wide red light district
+3472343	2	1	4	celeb sex tapes
+3472343	3	1	6	acreage for sale in michighan
+3472343	3	1	7	acreage for sale in michigan
+3472343	3	1	17	for sale by owner land
+3472343	4	1	20	the best cheep wrinkle corrector
+3472343	4	1	21	the best cheap wrinkle corrector
+3472343	5	1	23	serling homes
+3472343	5	1	24	serling brand modular homes
+3472343	5	1	25	american manufactured living
+3472343	5	1	26	sterling brand homes
+3472343	5	1	27	sterling
+3472343	5	2	28	deception cream
+3472343	5	2	29	deception cream before and afters
+3472343	5	2	31	kohls
+3472343	6	1	32	web md
+3472343	6	1	33	rash
+3472343	6	1	34	rash from baby oil
+3472343	6	1	35	can baby oil cause a rash
+3472343	6	1	36	prickly heat
+3472343	6	1	42	how to clear up prickly heat fast
+3472343	6	1	45	can baby oil cause a prickly heat
+3472343	6	1	46	how to clear up prickly heat
+3472343	6	1	47	how to clear up prickly heat on adult
+3472343	6	1	48	adult prickly heat
+3472343	6	2	51	view yahoo profiles
+3472343	6	2	52	yahoo
+3472343	6	2	53	yahoo personals
+3472343	7	1	54	american living
+3472343	7	1	55	american manufactured living
+3472343	7	2	56	m.a.d.d. videos
+3472343	7	2	57	motorcyclist impalles
+3472343	7	2	58	motorcyclist impalled
+3472343	7	2	59	motorcyclist impaled
+3472343	7	2	60	motorcyclist impaled by fence
+3472343	7	2	62	motorcyclist impaled by fence and lives
+3472343	7	2	63	motorcyclist accidents
+3472343	7	2	64	pictures of motorcycle accidents
+3472343	8	1	69	gwen stafani
+3472343	8	1	70	gwen stefani
+3472343	8	1	72	gwen stefani pictures
+3472343	8	1	73	how could this happen to me
+3472343	9	1	74	ottawashoreshumanesocietey.com
+3472343	9	1	75	ottawa shores humane societey
+3472343	9	1	76	ottawa shores humane society
+3472343	9	1	77	missing dog
+3472343	9	2	78	american idol
+3472343	9	3	79	west ottawa class of 1999
+3472343	9	3	81	west ottawa class of 1999
+3472343	9	3	82	west ottawa class of 1999 pictures
+3472343	9	4	80	danny berry
+42075	1	1	1	www.dmc.com
+42075	1	1	2	www.dmc.org
+42075	3	1	8	aruther ash
+42075	3	1	9	arthur ash
+42075	3	1	11	authur ash
+42075	3	1	12	arthur ash
+42075	3	1	15	aruther ash
+42075	3	1	16	arthur ash
+42075	3	1	17	arthur ash biography
+42075	3	1	18	arthur ashe biography
+42075	5	1	29	wrestlemania 22 prediction 2006
+42075	5	1	30	wrestlemania 22 new prediction 2006
+42075	5	1	35	wrestlemania 22 prediction 2006
+42075	5	1	38	wrestlemania 22 new prediction 2006
+42075	5	1	41	wrestlemania 22 prediction 2006
+42075	5	1	42	wrestlemania 22 new prediction 2006
+42075	5	1	43	wrestlemania 22 prediction 2006
+42075	5	1	45	wrestlemania 22 new prediction 2006
+42075	5	2	25	wwe news headlines
+42075	5	2	27	wwe
+42075	7	1	55	wilma rodolf biogrphy
+42075	7	1	56	wilma rudolph biography
+42075	7	1	66	photos of wilma rodolf
+42075	7	1	67	photos of wilma rudolf
+42075	7	1	68	information about wilma rodlof
+42075	7	1	69	information about wilma redlof
+42075	7	1	70	information about wilma rodolf
+42075	7	1	71	information about wilma rudolf
+42075	7	2	63	photos of arhtur ashe
+42075	7	2	64	photos of arthur ashe
+42075	8	1	73	wwe news headlines
+42075	8	1	76	wrestlemania 22 2006 prediction
+42075	9	1	87	newest wrestlemania 22 prediction 2006
+42075	9	1	93	wwe news headlines
+42075	9	1	94	newest wrestlemania 22 prediction 2006
+42075	9	1	96	newest wrestlemania 22 prediction 2006
+42075	9	1	99	newest wrestlemania 22 prediction 2006
+42075	9	1	100	wwe news headlines
+42075	9	2	101	randy orton
+42075	9	2	105	randy orton kurt angle wrestlemania 22
+42075	9	2	106	randy orton
+42075	9	2	107	randy orton kurt angle wrestlemania 22
+42075	9	2	111	randy orton
+42075	9	2	113	randy orton kurt angle wrestlemania 22
+42075	9	2	117	randy orton kurt angle wrestlemania 22
+42075	9	2	119	randy orton kurt angle wrestlemania 22
+4265086	1	1	1	antidepressant patch
+4265086	2	1	2	lyrics for anymore by travis tritt
+4265086	3	1	3	academy awards
+4265086	3	1	5	predictions for oscar winners
+4265086	4	1	8	strontium
+4265086	4	2	11	hydroicell
+4265086	4	2	12	hydricell
+4265086	4	2	13	hydricell verticillata
+4265086	5	1	15	zenith tvs
+4265086	5	1	17	zenith 50 inch tvs
+4265086	5	1	18	ultimate electronics
+4265086	6	1	19	walmart
+4265086	6	1	20	rubbermaid containers
+4265086	6	1	21	lowes
+4265086	7	1	22	walmart
+4265086	7	1	23	rubbermaid containers
+4265086	8	1	26	home theatre
+4265086	8	2	27	oriental rugs for sale in tulsa
+4265086	8	2	29	aminis galleria
+4265086	8	2	31	oriental rugs
+4265086	9	1	32	oscar predictions
+4265086	10	1	35	thomasville
+4265086	10	1	36	thomasville kings landing cocktail tables
+4265086	10	1	37	lane cocktail tables
+4265086	10	1	38	stanley cocktail tables
+4265086	10	1	39	mathis brothers
+4265086	10	1	40	fairmont designs furniture
+4265086	10	1	41	glass top cocktail tables
+4265086	10	2	43	stained glass globes for ceiling fan
+4265086	10	2	45	dale tiffany lights
+4265086	10	3	46	ultimate electronics
+4265086	10	3	47	bose home theater
+4265086	13	1	53	loan ammoritization
+4265086	13	1	54	loan ammoritization calculator
+4265086	15	1	56	john yanni christopher arrest picture
+4265086	15	1	57	smoking gun.com
+4265086	15	2	58	dr. hart
+4265086	15	2	59	lvi
+4265086	15	3	60	beeline furniture
+4265086	15	3	61	mathis brothers.com
+4265086	15	3	62	mathis brothers
+4265086	16	1	63	pulaski.com
+4265086	16	1	64	pulaskifurniture.com
+4265086	16	1	65	bakers street by pulaski
+4265086	16	1	66	22 bakers street by pulaski
+4265086	17	1	67	zenith
+4265086	18	1	68	lg
+4265086	19	1	69	beeline furniture
+4265086	19	2	70	milnacipran
+4265086	20	1	71	domperidome
+4265086	20	2	72	yahoo
+4265086	20	3	73	usa today
+4265086	21	1	74	free clinic in bartlesville ok
+4265086	21	1	77	green country free clinic
+4265086	21	1	78	washington county medical
+4265086	21	1	79	washington county ok medical
+4265086	21	1	82	medical director of washington country ok
+4265086	21	1	83	cindy pribil
+4265086	21	1	84	bartlesville ok medical
+4265086	21	2	85	bill pierson
+4265086	21	2	86	pierson william riley
+4265086	21	2	87	william pierson
+4265086	21	3	88	yamaha home theatre in a box
+4265086	21	3	89	ultimate electronics
+4265086	21	3	90	the sound station in bartlesville ok
+4265086	21	3	91	audio stores in tulsa ok
+4265086	21	3	92	best buy
+4265086	21	3	93	sears
+4265086	21	3	94	lg hdtv
+4265086	21	4	95	us cellular
+4265086	22	1	96	dictionary
+4265086	22	2	97	amazon
+4265086	22	3	98	iowa
+4265086	22	3	100	mapquest
+4265086	22	4	101	garland schools
+4265086	23	1	102	20 ft motor homes
+4265086	23	1	103	20 ft motorhomes
+4265086	23	1	104	rv's
+4265086	23	1	105	vanguard
+4265086	24	1	106	jamaica
+4265086	24	1	107	beeline furniture
+4265086	25	1	108	book the fules
+4265086	25	1	109	book the rules
+4265086	29	1	116	xanax
+4265086	30	1	117	barton creek
+4265086	30	1	118	barton creek weddings
+497336	1	1	1	hotmahup.com
+497336	1	1	2	hotmatchup.com
+497336	2	1	3	easeloanforyou.com
+497336	2	1	4	www.easeloanforyou.com
+497336	2	1	5	123onlinecash.com
+497336	2	1	6	mycashnow.com
+497336	3	1	8	hotmatchup.com
+497336	3	1	9	imatchup.com
+497336	3	1	10	hotmatchup.com
+497336	3	2	7	nationalcash.com
+497336	3	2	11	myappleloan.com
+497336	4	1	12	hotmatchp.com
+497336	4	1	13	hotmatchup.com
+497336	5	1	15	inboxdollars.com
+497336	5	1	16	mydollarshop.com
+497336	5	2	14	imatchup.com
+497336	5	2	17	hotmatchup.com
+497336	6	1	18	www.masspayouts com
+497336	6	1	20	www.masspayouts com
+497336	6	1	22	fusioncash.net
+497336	6	2	19	hotmatchup.com
+497336	6	2	23	imatchup.com
+497336	7	1	24	www.masspayouts.com
+497336	7	1	27	www.masspayouts com
+497336	7	1	30	fusioncash.net
+497336	7	1	31	www.masspayouts.com
+497336	7	1	40	fusioncash.net
+497336	7	1	43	nationalcash.com
+497336	7	1	45	fusioncash.net
+497336	7	1	47	www.masspayuts.com
+497336	7	1	48	fusioncash.net
+497336	7	1	50	www.masspayouts.com
+497336	7	2	25	hotmatchup.com
+497336	7	2	26	imatchup.com
+497336	7	2	32	imatchup.com
+497336	7	2	39	zogo.com
+497336	7	2	41	plentyoffish.com
+497336	7	2	44	hotmatchup.com
+497336	7	2	46	hotmatchup.com
+497336	7	3	34	myollarshop.com
+497336	7	3	35	mydollarshop.com
+497336	7	3	36	http; mydollarshop123.com
+497336	7	3	37	http rodwill123.mydollarshop.com
+497336	7	3	49	mydollarshop.com
+497336	7	4	29	ingdirect.com
+497336	7	4	33	ingdirect.com
+497336	8	1	51	inboxdollars.com
+497336	8	2	52	hotmatchup.com
+497336	9	1	53	imatchup.com
+497336	9	1	54	hotmatchup.com
+497336	9	2	56	clickbank.com
+497336	9	3	55	www.masspayouts.com
+497336	10	1	57	hotmatchup.com
+497336	10	1	58	imatchup.com
+497336	10	1	60	hotmatchup.com
+497336	10	1	61	imatchup.com
+497336	10	1	63	hotmatchup.com
+497336	10	2	59	fusioncash.net
+497336	11	1	64	www.masspayouts.com
+497336	11	1	68	www.masspayouts.com
+497336	11	1	69	creditattorney.com
+497336	11	1	70	www.bankofamerica.com
+497336	11	1	71	infusioncash.com
+497336	11	1	73	fusioncashnet.com
+497336	11	1	74	nationalcash.com
+497336	11	1	75	emigrantdirect.com
+497336	11	1	76	fusioncashnet.com
+497336	11	1	79	fusioncash.com
+497336	11	2	66	imatchup.com
+497336	11	2	67	hoymatchup.com
+497336	11	3	65	mydollarshop
+497336	11	3	72	mydollarshop.com
+497336	11	3	78	mydollarshop.com
+497336	12	1	80	inboxdollars.com
+497336	12	1	81	providian.com
+497336	12	1	82	fusioncash.com
+497336	13	1	83	hotmatchup.com
+497336	14	1	84	zogo.com
+497336	15	1	86	capital.com
+497336	15	1	87	northforkbank.com
+497336	15	1	88	capitalone.com
+497336	15	1	89	bankofamerica.com
+497336	15	2	85	hotmatchup.com
+497336	15	2	90	hotmatchup.com
+497336	16	1	92	blair.com
+497336	16	2	91	fusioncash.com
+497336	16	3	93	hotmatchup.com
+497336	17	1	95	hotmatchup.com
+497336	17	2	96	fusioncash.com
+497336	18	1	97	www.creditservicescreditplusrewards.com
+497336	18	1	98	www.creditplusrewards.com
+497336	18	1	100	creditplusrewards.com
+497336	18	1	101	www.creditplusreward.com
+497336	18	1	102	www.creditplusrewards.com
+497336	18	1	103	creditplusrewards.com
+497336	18	1	106	creditplusrewards.com
+497336	18	1	107	www.creditservicesrewards.com
+497336	18	1	108	www.creditservices.com
+497336	18	1	109	www.creditrewardsservices.com
+497336	18	1	110	www.creditrewards.com
+497336	18	1	111	wwwcreditplus.com
+497336	18	1	112	www.creditplusrewards.com
+497336	18	1	113	www.creditplusservices.com
+497336	18	1	114	www.creditplusrewardsservices.com
+497336	18	1	125	aspirecard.com
+497336	18	1	126	www.creditonebank.com
+497336	18	2	105	hotmatchup.com
+497336	18	2	117	imatchup.com
+497336	18	2	118	imachup.com
+497336	18	2	119	imatchup.com
+497336	18	3	104	www.masspayouts.com
+497336	18	3	116	hsncharge.com
+497336	18	3	121	blair.com
+497336	18	3	123	blair.com
+497336	18	3	127	hsn.com
+497336	18	4	115	inboxdollars.com
+497336	18	4	120	bankofamerica.com
+497336	18	4	122	capitalone.com
+497336	18	4	124	orchardbank.com
+497336	19	1	128	capitalone.com
+497336	19	1	129	providian.com
+497336	20	1	130	bankofamerica.com
+497336	20	2	131	hotmatchup.com
+497336	21	1	132	hoymatchup.com
+497336	21	1	133	hotmatchup.com
+497336	21	1	135	imatchup.com
+497336	21	2	137	survey.com
+497336	21	3	134	www.masspayouts.com
+497336	21	3	136	inboxdollars.com
+497336	22	1	138	hotmatchup.com
+497336	22	1	140	imatchup.com
+497336	22	2	141	fusioncash.com
+497336	23	1	142	pandareseach.com
+497336	23	1	143	www.pandareseach.com
+497336	23	1	144	pandareseach.com
+497336	23	1	145	surveyspandaresearch.com
+497336	23	1	146	www.surveyspandaresearch.com
+497336	23	1	147	pandaresearch.com
+497336	24	1	148	hotmatchup.com
+497336	24	2	149	pandareseach.com
+497336	24	2	150	pandaresearch.com
+497336	25	1	151	hotmatcup.com
+497336	25	2	152	pandaresearch.com
+497336	26	1	153	hoymatchup.com
+497336	26	1	154	hotmatchup.com
+497336	26	2	155	pandaresearch.com
+497336	27	1	156	hoymatchup.com
+497336	27	1	157	hotmatchup.com
+497336	27	2	158	fusioncash.com
+497336	28	1	159	pandareseach.com
+497336	28	1	160	pandaresearch.com
+497336	28	1	162	inboxdollars.com
+497336	28	1	163	pandaresearch.com
+497336	28	2	161	mydollarshop.com
+497336	29	1	164	imatchup.com
+497336	29	2	166	mydollarshop.com
+497336	30	1	170	kitkitcash.com
+497336	30	1	171	kitcatcash.com
+497336	30	1	172	tiktikcash.com
+497336	30	2	168	hotmatchup.com
+497336	30	2	169	imatchup.com
+497336	31	1	173	hotmatchup.com
+497336	32	1	174	tiktikcash.com
+497336	33	1	175	inboxdollars.com
+497336	33	1	177	pandaresearch.com
+497336	34	1	179	mate1.com
+497336	35	1	180	inboxdollars.com
+497336	35	1	182	pandaresearch.com
+497336	35	1	183	tiktikcash.com
+497336	36	1	186	hotmatchup.com
+497336	36	2	189	tiktikcash.com
+497336	36	2	194	fusioncash.com
+497336	36	3	190	www.bankofamerica.com
+497336	36	3	191	www.creditplusrewards.com
+497336	36	3	192	creditplusrewards.com
+497336	36	3	193	emigrantdirect.com
+497336	38	1	200	kitcatcash.com
+497336	38	1	201	fusioncash.com
+497336	38	1	206	inboxdollars.com
+497336	38	1	207	pandareserch.com
+497336	38	1	208	pandaresearch.com
+497336	38	2	202	hotmatchup.com
+497336	38	2	203	imachup.com
+497336	38	2	204	imatchup.com
+497336	38	2	205	true.com
+497336	39	1	209	northforkbank.com
+497336	40	1	212	www.masspayouts.com
+497336	40	1	213	tiktikcash.com
+497336	40	1	214	www.masspayouts.com
+497336	40	1	216	pandaresearch.com
+497336	41	1	217	www.providentbank.com
+497336	41	1	218	www.providianbank.com
+497336	41	1	219	providianbank.com
+497336	41	1	220	www.providianbank.com
+497336	41	1	221	providian.com
+497336	41	1	225	orchardbank.com
+497336	41	1	226	creditonebank.com
+497336	41	2	222	hotmatcup.com
+497336	41	2	223	hotmatchup.com
+497336	41	2	224	imatchup.com
+497336	42	1	230	inboxdollars.com
+497336	42	1	231	tiktikcash.com
+497336	42	2	228	imatchup.com
+497336	43	1	232	www.masspayouts.com
+497336	43	1	233	pandaresearch.com
+497336	43	1	234	tiktikcash.com
+497336	43	1	237	inboxdollars.com
+497336	43	1	240	ww.masspayouts.com
+497336	43	1	241	www.masspayouts.com
+497336	43	2	235	mydollarstore.com
+497336	43	2	236	mydollarshop.com
+497336	43	3	238	imatchup.com
+497336	43	3	239	hotmatchup.com
+497336	44	1	244	www.masspayouts.com
+497336	44	1	248	tiktikcash.com
+497336	44	1	249	pandaresearch.com
+497336	44	2	246	mydollarshop.com
+497336	45	1	251	ameriloanloan.com
+497336	45	1	252	ameriloan.com
+497336	45	2	250	hotmatchup.com
+497336	46	1	260	northforkbank.com
+497336	46	1	261	ameriloan.com
+497336	47	1	262	www.masspayouts.com
+497336	47	1	264	www.masspayots.com
+497336	47	2	263	hotmatchup.com
+497336	47	3	265	ameriloan.com
+497336	48	1	266	www.masspayouts.com
+497336	48	2	267	hotmatchup.com
+497336	49	1	268	northforkbank.com
+497336	49	1	270	ameriloan.com
+497336	49	1	272	www.providianbank.com
+497336	49	1	273	providian.com
+497336	49	1	274	www.bankofamerica.com
+497336	49	2	271	pandaresearch.com
+497336	49	2	277	tiktikcash.com
+497336	49	3	269	hotmatchup.com
+497336	49	3	275	imatchup.com
+497336	49	4	276	mydollarshop.com
+497336	50	1	278	aspirecard.com
+497336	50	1	279	creditonebank.com
+497336	50	1	283	capitalone.com
+497336	50	1	284	infusion.com
+497336	50	1	285	infusioncash.com
+497336	50	1	286	infusioncash.net
+497336	50	1	287	fusioncash.com
+497336	50	1	288	cashinyourhandtoday.com
+497336	50	1	289	canhinyourhand.com
+497336	50	1	290	ingdirect.com
+497336	50	1	291	orchardbank.com
+497336	50	1	292	northforkbank.com
+497336	50	2	280	plentyoffish.com
+497336	50	2	281	true.com
+497336	51	1	298	fusioncash.com
+497336	51	1	300	ingdirect.com
+497336	51	1	301	capital.com
+497336	51	1	303	infusion.com
+497336	51	1	304	fusioncash.com
+497336	51	2	294	www.masspayouts.com
+497336	51	2	296	inboxdollars.com
+497336	51	2	297	tiktikcash.com
+497336	51	2	302	www.masspayouts.com
+497336	51	3	299	hotmatchup.com
+497336	51	4	295	mydollarshop.com
+497336	51	4	305	mydollarshop.com
+497336	52	1	306	www.masspayouts.com
+497336	52	1	308	fusioncash.com
+497336	52	1	309	pandareseach.com
+497336	52	1	310	pandaresearch.com
+497336	53	1	311	fusioncash.com
+497336	55	1	315	hotmatchup.com
+497336	55	1	317	hotmatchup.com
+497336	55	1	321	hotmatchup.com
+497336	55	1	322	imatchup.com
+497336	55	1	323	hotmatchup.com
+497336	55	2	314	www.masspayouts.com
+497336	55	2	324	fusioncash.com
+497336	55	2	325	www.fusioncash.com
+497336	55	2	327	fusioncash com
+497336	56	1	328	northforkbank.com
+497336	56	2	329	hotmatchup.com
+497336	57	1	330	aspirecard.com
+497336	57	1	332	northforkbank.com
+497336	57	1	334	fusioncash com
+497336	57	2	331	hotmatchup.com
+497336	57	2	333	hotmatchup.com
+497336	57	2	335	hotmatchup.com
+497336	58	1	336	www.masspayouts.com
+497336	58	1	338	fusioncash com
+497336	59	1	339	www.masspayouts.com
+497336	59	1	342	pandaresearch.com
+497336	59	1	343	tiktikcash.com
+497336	59	1	344	titcash.com
+497336	60	1	348	hottmatchup.com
+497336	60	1	349	hotmatch.com
+497336	60	1	350	hotmatchup.com
+497336	62	1	354	northforkbank.com
+497336	62	1	356	inboxdollars.com
+497336	62	2	353	mydollarshop.com
+497336	63	1	357	hotmatchup.om
+497336	63	1	358	hotmatchup.com
+497336	64	1	359	imatchu.com
+497336	64	1	360	imatchup.com
+497336	64	1	361	zogo.com
+497336	64	1	362	hotmatchup.om
+497336	64	1	363	plentyoffish.com
+497336	64	1	364	hatchup.com
+497336	64	1	365	hotmatchup.com
+711391	1	1	1	can not sleep with snoring husband
+711391	1	1	2	cannot sleep with snoring husband
+711391	2	1	4	jackie zeaman nude
+711391	2	1	5	jackie zeman nude
+711391	4	1	11	how to kill mockingbirds
+711391	4	1	12	how to kill annoying birds in your yards
+711391	4	1	14	how to rid your yard of noisy annoying birds
+711391	4	1	17	how do i get mocking birds out of my yard
+711391	4	1	18	how do i get mockingbirds out of my yard
+711391	4	1	20	how to get rid of noisy loud birds
+711391	6	1	24	beth moore
+711391	6	1	25	judy baker ministries
+711391	7	1	27	online friendships can be very special
+711391	7	1	28	online friendships
+711391	9	1	30	people are not always how they seem over the internet
+711391	9	1	31	friends online can be different in person
+711391	11	1	34	community christian church houston tx
+711391	11	1	35	gay churches in houston tx
+711391	11	1	36	community gospel church in houston tx
+711391	12	1	37	houston tx is one hot place
+711391	12	1	38	houston tx is one hot place to live
+711391	14	1	44	white hard dry skin on face
+711391	14	1	45	white heads
+711391	14	1	46	pimple that wont go away with white hard skin over it
+711391	14	1	47	pimple that gets white and hard
+711391	14	1	49	pimple that gets white head on it and never goes away
+711391	14	2	50	cruises to the bahamas suck
+711391	14	2	52	cruises from port canaverel florida to the bahamas
+711391	14	2	53	cruises from port canaveral florida to the bahamas
+711391	16	1	66	can pre menopause cause sleeplessness
+711391	16	1	67	can peri menopause cause sleeplessness
+711391	16	1	68	can perimenopause cause sleeplessness
+711391	17	1	74	who is crystal bernard romantically linked with
+711391	17	1	75	is crystal bernard bisexual
+711391	20	1	81	larry the cable guy's new movie
+711391	20	1	82	larry the cable guy.com
+711391	20	1	84	larry the cable guy's new movie
+711391	22	1	93	men need encouragement
+711391	22	1	96	men need a womans love
+711391	22	2	90	did anyone ever tell you how proud of you they are
+711391	22	2	91	i'm so proud of you
+711391	24	1	102	loyds photgraphy houston tx
+711391	24	1	103	lolyds photgraphy houston tx
+711391	24	1	104	lloyds photography houston tx
+711391	24	2	105	pt girls
+711391	24	2	106	pt girls at jazzercise
+711391	25	1	108	lyrics to cheryl crow's this is home
+711391	25	1	109	sheryl crow lyrics
+711391	27	1	112	how many online romances lead to sex
+711391	27	1	113	how many online romances lead to sex in person
+711391	30	1	119	jokes for probation officers
+711391	30	1	121	moms are smarter email joke
+711391	31	1	122	be ye kind to one another
+711391	31	1	128	scriptures that teach siblings to be kind to one another
+711391	31	1	130	be ye kind to one another
+711391	31	1	131	scriptures that teach kindness to one another
+711391	31	1	134	the bible says be kind to one another
+711391	34	1	141	sixstring.org
+711391	34	1	142	six string.org
+711391	34	2	143	mansfield news journal
+711391	34	2	144	news 2 houston
+711391	35	1	145	is there anything you can put in the back of shoes to make the heels not slip
+711391	35	1	146	something to put in shoes that are too big
+711391	35	1	147	heels of my shoes are too big
+711391	35	2	148	women with curvy bodies
+711391	35	2	151	men like women with curvy bodies
+711391	35	2	153	women with curvy bodies
+711391	39	1	161	buckhorn bar san antonio tx
+711391	39	1	166	buckhorn muesum and saloon prices
+711391	39	1	167	buckhorn museum and saloon prices
+711391	39	2	171	el macardo san antonio tx
+711391	39	2	172	el mercado san antonio tx
+711391	39	3	168	fingers furniture
+711391	39	3	169	gallery furniture
+711391	39	3	170	tl1.galleryfurniture.com
+711391	40	1	178	a pimple that wont hea
+711391	40	1	179	a pimple that wont heal
+711391	40	1	181	white bump or pimple on face with skin over it
+711391	40	1	184	white bump on my face
+711391	40	2	176	signs of skin cancer
+711391	42	1	188	doctor phil's wife robin is a horrible speaker
+711391	42	1	189	i cant stand dr. phil or his wife
+711391	46	1	198	omni hotel san antonio tx
+711391	46	1	199	la quinta san antonio tx
+711391	46	2	200	sea world of texas
+711391	46	2	201	address to sea world of texas
+711391	47	1	202	omni hotel san antonio tx
+711391	48	1	204	houston tx
+711391	48	1	205	yahoo travel reviews on houston tx.

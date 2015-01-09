@@ -1,0 +1,2 @@
+98	iowa
+100	mapquest

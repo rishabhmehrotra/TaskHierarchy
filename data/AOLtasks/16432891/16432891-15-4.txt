@@ -1,0 +1,4 @@
+97	relearn proper walking
+99	can not spread legs
+100	can not abduct legs
+101	cannot abduct legs

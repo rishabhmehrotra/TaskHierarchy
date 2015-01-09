@@ -1,0 +1,3 @@
+242	matchsticks game
+249	matchsticks game
+250	matchsticks game nim

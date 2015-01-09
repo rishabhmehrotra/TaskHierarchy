@@ -1,0 +1,2 @@
+51	universal product identifier
+52	universal merchandise identifier

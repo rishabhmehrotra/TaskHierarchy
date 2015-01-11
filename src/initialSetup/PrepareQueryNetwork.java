@@ -49,6 +49,5 @@ public class PrepareQueryNetwork {
 		FileWriter fstream = new FileWriter("data/queryNetwork");
 		BufferedWriter out = new BufferedWriter(fstream);
 		
-		
 	}
 }

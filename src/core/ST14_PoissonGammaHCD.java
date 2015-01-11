@@ -7,6 +7,7 @@ import datastr.Document;
 import datastr.Node;
 import datastr.Query;
 import datastr.Tree;
+import experiments.ComputePairwiseFRPScoresOnAOL;
 
 // this class modified the existing BHCD algo & incorporates the Poisson-Gamma conjugate distribution model
 public class ST14_PoissonGammaHCD {
@@ -23,10 +24,13 @@ public class ST14_PoissonGammaHCD {
 	public static Tree finalTree;
 	public static ArrayList<Query> queryList;
 	public static HashMap<String, String> stopWords;
+	
+	public static int pruning = 2;// 0 no pruning, 1- all pruning, 2- just the tree merge based on size pruning
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
-		int stage = 1;// the stages decide whether we want to run the first part of the code or just the second part of the code
+		// the stages decide whether we want to run the first part of the code or just the second part of the code
+		int stage = 1;
 		
 		if(stage == 1)
 		{
@@ -48,14 +52,21 @@ public class ST14_PoissonGammaHCD {
 		else
 		{
 			loadFinalTree();
-			FileWriter fstream = new FileWriter("data/hierarchyDEMO_SessionTrack2014");
-			BufferedWriter out = new BufferedWriter(fstream);
-			printFirstLevelOfFinalTree(finalTree, 0, out);
-			out.close();
+			System.out.println("Loaded tree: "+finalTree.nChildren);
+			new ComputePairwiseFRPScoresOnAOL(finalTree);
+			printTree();
 		}
 		
 		
 		//printHierarchicalTree(finalTree);
+	}
+	
+	public static void printTree() throws IOException
+	{
+		FileWriter fstream = new FileWriter("data/hierarchyDEMO_demo");
+		BufferedWriter out = new BufferedWriter(fstream);
+		printFirstLevelOfFinalTree(finalTree, 0, out);
+		out.close();
 	}
 	
 	@SuppressWarnings({ "unchecked", "unchecked" })
@@ -151,6 +162,7 @@ public class ST14_PoissonGammaHCD {
 	{
 		// as of now we have populated the forrest and then for all pairs of trees in the forrest we have populated the corresponding merged trees in the heap/priorityQueue
 		int temp1=0;
+		int maxTreeSize = 0;
 		while(heap.size() > 0)
 		{
 			Tree I = heap.poll();
@@ -174,8 +186,28 @@ public class ST14_PoissonGammaHCD {
 					// compute sigmaMM, where M is the possible merges of I & J
 					// now there are 3 possibilities to merge I & J, we calculate bayesFactorScore for each
 					// possibility and chose the one which has the maximum score -- all this is done inside mergeTrees
+					if(pruning == 2)
+					{
+						//int n1 = I.nChildren;
+						//int n2 = J.nChildren;
+						int n1 = I.nodeList.size();
+						int n2 = J.nodeList.size();
+						//if(n1>n2 && n1-n2>30) {System.out.println("----------------------SKIPPED -2");continue;}
+						//if(n2>n1 && n2-n1>30) {System.out.println("----------------------SKIPPED -2");continue;}
+						if(n1 > n2 && n1>20)
+						{
+							if(n2 < 0.25*n1) {System.out.println("----------------------SKIPPED -2");continue;}
+							if(n1 > 1.75*n2) {System.out.println("----------------------SKIPPED -2");continue;}
+						}
+						else if(n2 > n1 && n2>20)
+						{
+							if(n1 < 0.25*n2) {System.out.println("----------------------SKIPPED -2");continue;}
+							if(n2 > 1.75*n1) {System.out.println("----------------------SKIPPED -2");continue;}
+						}
+					}
 					Tree M = mergeTrees(I, J);
 					heap.add(M);
+					if(M.nodeList.size() > maxTreeSize) {maxTreeSize = M.nodeList.size();finalTree = M;}
 					//System.out.println("Tree added to the heap: L="+M.likelihood+" S="+M.bayesFactorScore+" X="+M.getX().treeID+" Y="+M.getY().treeID+" noNodes: "+M.nodeList.size());
 					//System.out.println("Current Heap Size: "+heap.size()+" no of nodes in M ryt now: "+M.nodeList.size()+"__nChildren: "+M.nChildren+" sizeNetwork: "+sizeNetwork);
 					temp = M.nodeList.size();
@@ -185,7 +217,8 @@ public class ST14_PoissonGammaHCD {
 						System.out.println("Final tree -- "+M.childTrees.size()+"_"+M.nChildren);
 					}
 				}
-				System.out.println("Current Heap Size: "+heap.size()+" no of nodes in M ryt now: "+temp+" sizeNetwork: "+sizeNetwork);
+				//System.out.println("Current Heap Size: "+heap.size()+" no of nodes in M ryt now: "+temp+" sizeNetwork: "+sizeNetwork);
+				System.out.println("Current Heap Size: "+heap.size()+"\t Forrest Size:"+forrest.size()+"\tno of nodes in I ryt now: "+I.nodeList.size()+"__nChildren: "+I.nChildren+" sizeNetwork: "+sizeNetwork);
 			}
 			//else do nothing, the element has already been popped out from the PriorityQueue
 		}
@@ -304,11 +337,14 @@ public class ST14_PoissonGammaHCD {
 		// and product it over all the query pairs
 		double result = 1d;//1 coz we have to multiply
 		int size = t.nodeList.size();
+		int count=0, nn=0;
+		int R1=0, R2=0, R3=0;
 		for(int i=0;i<size;i++)
 		{
 			Node n1 = t.nodeList.get(i);
 			Query q1 = n1.q;
-			for(int j=i+11;j<size;j++)
+			
+			for(int j=i+1;j<size;j++)
 			{
 				Node n2 = t.nodeList.get(j);
 				Query q2 = n2.q;
@@ -316,15 +352,35 @@ public class ST14_PoissonGammaHCD {
 				int r1 = getR1(q1, q2);
 				int r2 = getR2(q1, q2);
 				int r3 = getR3(q1, q2);
+				R1+=r1;
+				R2+=r2;
+				R3+=r3;
+				nn++;
+				count += (r1+r2+r3);
+				//System.out.println("r1/2/3="+r1+"_"+r2+"_"+r3);
 				// now we have the r values, we 
-				double affinity1 = getGammaPosterior(alpha1, beta1, r1);
-				double affinity2 = getGammaPosterior(alpha2, beta2, r2);
-				double affinity3 = getGammaPosterior(alpha3, beta3, r3);
+				//double affinity1 = getGammaPosterior(alpha1, beta1, r1);
+				//double affinity2 = getGammaPosterior(alpha2, beta2, r2);
+				//double affinity3 = getGammaPosterior(alpha3, beta3, r3);
 				// now we have the affinities from each of the 3 relations, we need to calculate the likelihood of this tree (= with just two nodes)
-				double temp = affinity1*affinity2*affinity3;
-				if(temp>0) result*=temp;
+				//double temp = affinity1*affinity2*affinity3;
+				//count++;
+				//if(temp>0) result*=temp;
 			}
 		}
+		
+		R1 = R1*5/nn;
+		R2 = R2*5/nn;
+		R3 = R3*5/nn;
+		//System.out.println("R1/2/3: "+R1+"_"+R2+"_"+R3+" Size: "+size);
+		double affinity1 = getGammaPosterior(alpha1, beta1, R1);
+		double affinity2 = getGammaPosterior(alpha2, beta2, R2);
+		double affinity3 = getGammaPosterior(alpha3, beta3, R3);
+		
+		result = affinity1*affinity2*affinity3;
+		//if(pruning==1) if(count==0) return -1;
+		
+		//return (result/count);//returning the average instead of just the result
 		return result;
 	}
 	
@@ -338,7 +394,7 @@ public class ST14_PoissonGammaHCD {
 			double affinity2 = getGammaPosterior(alpha2, beta2, r2);
 			double affinity3 = getGammaPosterior(alpha3, beta3, r3);
 			likelihood = affinity1*affinity2*affinity3;
-			System.out.println("Inside getTreeLikelihood for a leaf: "+likelihood+" "+affinity1+" "+affinity2+" "+affinity3);
+			//System.out.println("Inside getTreeLikelihood for a leaf: "+likelihood+" "+affinity1+" "+affinity2+" "+affinity3);
 			return likelihood;//we donot assign this likelihood to the tree here coz the function calling it would be doing it anyway
 		}
 		else // if its not a leaf, then its a merge tree,

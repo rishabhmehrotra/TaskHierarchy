@@ -66,6 +66,7 @@ public class PoissonGammaHCD {
 		FileWriter fstream = new FileWriter("data/hierarchyDEMO_demo");
 		BufferedWriter out = new BufferedWriter(fstream);
 		printFirstLevelOfFinalTree(finalTree, 0, out);
+		out.close();
 	}
 	
 	@SuppressWarnings({ "unchecked", "unchecked" })

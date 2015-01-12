@@ -16,9 +16,11 @@ public class AOLIntersectionSessionTrackData {
 	public static HashMap<String, UserSession> userSessionsMap = new HashMap<String, UserSession>();
 	public static HashMap<String, String> commonQueries = new HashMap<String, String>();
 	public static HashMap<String, UserSession> prunedUserSessionsMap = new HashMap<String, UserSession>();
+	public static HashMap<Integer, Integer> commonSessionID = new HashMap<Integer, Integer>();
+	public static ArrayList<Query> common_AOLST_QueryList = new ArrayList<Query>();
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
-		int stage = 3;
+		int stage = 4;
 		if(stage == 1)
 		{
 			// load session track, find common queries between session track & AOL & populate user-query map of common users-queries between AOL & ST(Session Track)
@@ -48,6 +50,59 @@ public class AOLIntersectionSessionTrackData {
 			pruneUserSessions();
 			savePrunedUserSessionsToDisk();
 		}
+		else if(stage == 4)
+		{
+			// extra stage: find relevant sessions from the session track which have queries in the AOL as well
+			loadSessionTrackQueryList();
+			loadCommonQueries();
+			findSessionIDsFromCommonQueries();
+			populateQueryListFromCommonQueriesForTreeBuilding();
+			saveCommon_AOLST_QueryListToDisk();
+		}
+	}
+	
+	public static void saveCommon_AOLST_QueryListToDisk() throws IOException
+	{
+		FileOutputStream fos = new FileOutputStream("data/common_AOLST_QueryList");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(common_AOLST_QueryList);
+		fos.close();
+		System.out.println("Saved the common_AOLST_QueryList to disk");
+	}
+	
+	public static void populateQueryListFromCommonQueriesForTreeBuilding()
+	{
+		// traverse through the queryList and only put those queries whose sessionID is there in the common sessionID hashmap
+		Iterator<Query> itr = queryList.iterator();
+		while(itr.hasNext())
+		{
+			Query q = itr.next();
+			if(commonSessionID.containsKey(q.sessionID))
+			{
+				common_AOLST_QueryList.add(q);
+				//System.out.println(q.query+"_____"+q.documents.size());
+			}
+		}
+		System.out.println("Total queries via common session IDs: "+common_AOLST_QueryList.size());
+	}
+	
+	public static void findSessionIDsFromCommonQueries() throws IOException, ClassNotFoundException
+	{
+		Iterator<Query> itr = queryList.iterator();
+		while(itr.hasNext())
+		{
+			Query q = itr.next();
+			if(commonQueries.containsKey(q.query))
+			{
+				if(commonSessionID.containsKey(q.sessionID));
+				else
+				{
+					commonSessionID.put(new Integer(q.sessionID), 1);
+					//System.out.println(q.sessionID);
+				}
+			}
+		}
+		System.out.println("Sessions in ST via common queries in AOL & ST: "+commonSessionID.size());
 	}
 	
 	public static void loadUserSessionsFromDisk() throws IOException, ClassNotFoundException

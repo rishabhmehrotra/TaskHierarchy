@@ -63,7 +63,7 @@ public class ST14_PoissonGammaHCD {
 	
 	public static void printTree() throws IOException
 	{
-		FileWriter fstream = new FileWriter("data/hierarchyDEMO_demo");
+		FileWriter fstream = new FileWriter("data/hierarchyDEMO_demoST");
 		BufferedWriter out = new BufferedWriter(fstream);
 		printFirstLevelOfFinalTree(finalTree, 0, out);
 		out.close();
@@ -72,7 +72,8 @@ public class ST14_PoissonGammaHCD {
 	@SuppressWarnings({ "unchecked", "unchecked" })
 	public static void loadQueryList() throws IOException, ClassNotFoundException
 	{
-		FileInputStream fis = new FileInputStream("data/sessionTrack2014_queryList");
+		//FileInputStream fis = new FileInputStream("data/sessionTrack2014_queryList");
+		FileInputStream fis = new FileInputStream("data/common_AOLST_QueryList");
         ObjectInputStream ois = new ObjectInputStream(fis);
         queryList = (ArrayList<Query>) ois.readObject();
         ois.close();
@@ -145,6 +146,12 @@ public class ST14_PoissonGammaHCD {
 				m.setY(tj);
 				//get sigmaMM (= sigmaSelf) now
 				m.likelihood = getTreeLikelihood(m);// as of now, the tree m is a dual-child tree, the likelihood calculation of this case is handled in the getlikelihood function 
+				if(pruning == 2)
+					if(m.likelihood == -1)
+					{
+						//System.out.println("Skipped inside initial heap population");
+						continue;
+					}
 				// now we have the Pm (likelihood) for this merged tree...
 				// next we need to compute the score for this tree
 				m.bayesFactorScore = getBayesFactorScoreForTree(m);
@@ -152,7 +159,8 @@ public class ST14_PoissonGammaHCD {
 				heap.add(m);
 				//System.out.println("Tree added to the heap: L="+m.likelihood+" S="+m.bayesFactorScore+" X="+m.getX().treeID+" Y="+m.getY().treeID);
 			}
-			System.out.println("Populating Initial heap...current i:"+i);
+			System.out.println("Populating Initial heap...current i:"+i+" / "+forrest.size()+"___heapSize: "+heap.size());
+			//if(i==100) break;
 		}
 		System.out.println("Done with Heap Initialization; "+heap.size()+" trees added to the heap.\n");
 		//System.exit(0);
@@ -171,6 +179,7 @@ public class ST14_PoissonGammaHCD {
 			// if both of these trees X & Y arent there in forrest then that means they're already merged with some tree and we just remove this tree from the heap and proceed
 			if(forrestMap.containsKey(new Integer(X.treeID)) && forrestMap.containsKey(new Integer(Y.treeID)))
 			{
+				System.out.println("Popped from HEAP: nChildren= "+I.nChildren+"\tno of nodes: "+I.nodeList.size()+"\tlikelihood: "+I.likelihood);
 				forrest.remove(X);forrest.remove(Y);// TODO: checkthe validity, if incorrect, iterate & remove
 				forrestMap.remove(X.treeID);forrestMap.remove(Y.treeID);
 				forrest.add(I);
@@ -224,6 +233,7 @@ public class ST14_PoissonGammaHCD {
 		}
 		temp1++;
 		if(temp1%1000 == 0) System.out.println("Inside FindHierCom function, heap size: "+heap.size());
+		System.out.println("The maximum tree size seen during the hierarchy building: "+maxTreeSize);
 	}
 	
 	public static Tree mergeTrees(Tree I, Tree J)
@@ -275,7 +285,7 @@ public class ST14_PoissonGammaHCD {
 		
 		
 		// now we have all three possibilities, we see which yields the max num
-		System.out.println("num1: "+num1+" num2: "+num2+" num3: "+num3);
+		//System.out.println("num1: "+num1+" num2: "+num2+" num3: "+num3);
 		if(num1 >= num2 &&  num1 >= num3)
 		{
 			// case: JOIN I & J
@@ -372,7 +382,7 @@ public class ST14_PoissonGammaHCD {
 		R1 = R1*5/nn;
 		R2 = R2*5/nn;
 		R3 = R3*5/nn;
-		//System.out.println("R1/2/3: "+R1+"_"+R2+"_"+R3+" Size: "+size);
+		//System.out.println("R1/2/3: "+R1+"_"+R2+"_"+R3+" Size: "+size+" nn: "+nn);
 		double affinity1 = getGammaPosterior(alpha1, beta1, R1);
 		double affinity2 = getGammaPosterior(alpha2, beta2, R2);
 		double affinity3 = getGammaPosterior(alpha3, beta3, R3);
@@ -395,7 +405,8 @@ public class ST14_PoissonGammaHCD {
 			double affinity3 = getGammaPosterior(alpha3, beta3, r3);
 			likelihood = affinity1*affinity2*affinity3;
 			//System.out.println("Inside getTreeLikelihood for a leaf: "+likelihood+" "+affinity1+" "+affinity2+" "+affinity3);
-			return likelihood;//we donot assign this likelihood to the tree here coz the function calling it would be doing it anyway
+			//return likelihood;//we donot assign this likelihood to the tree here coz the function calling it would be doing it anyway
+			return 1;
 		}
 		else // if its not a leaf, then its a merge tree,
 		{
@@ -412,8 +423,11 @@ public class ST14_PoissonGammaHCD {
 				Node nY = Y.nodeList.get(0);
 				// now we have both the nodes, we need the r1, r2, r3 values form these two queries
 				int r1 = getR1(nX.q, nY.q);
-				int r2 = getR2(nX.q, nY.q);
 				int r3 = getR3(nX.q, nY.q);
+				if(pruning == 2) if(r1+r3 == 0) return -1;
+				int r2 = getR2(nX.q, nY.q);
+				//System.out.println("r1/2/3="+r1+"_"+r2+"_"+r3);
+				
 				// now we have the r values, we 
 				double affinity1 = getGammaPosterior(alpha1, beta1, r1);
 				double affinity2 = getGammaPosterior(alpha2, beta2, r2);
@@ -491,7 +505,7 @@ public class ST14_PoissonGammaHCD {
 		int temp1 = (1 - ed/length)*10;
 		
 		// Similarity score - 2 X no of common words
-		int temp2 = 2*findNumberOfCommonWords(s1,s2);
+		int temp2 = 3*findNumberOfCommonWords(s1,s2);
 		
 		// Jaccard Similarity
 		int temp3 = 0;
@@ -512,6 +526,7 @@ public class ST14_PoissonGammaHCD {
 		
 		//result = temp1 + temp2 + temp3+ temp4 + temp5;
 		result = temp2;
+		if(result>=3) result = 1; else result = 0;
 		return result;
 	}
 	
@@ -592,6 +607,7 @@ public class ST14_PoissonGammaHCD {
 		
 		//result = temp1 + temp2 + temp3 + temp4 + temp5;
 		result = temp6;
+		if(result>5) result = 1; else result = 0;
 		return result;
 	}
 	
@@ -618,15 +634,23 @@ public class ST14_PoissonGammaHCD {
 	
 	public static int findNumberOfCommonWords(String s1, String s2)
 	{
-		int result = 0;
+		int result1 = 0;
 		String parts1[] = s1.split(" ");
-		String parts2[] = s2.split(" ");
-		
 		for(int i=0;i<parts1.length;i++)
 		{
-			if(s2.contains(parts1[i]) && (!stopWords.containsKey(parts1[i]))) result++;
+			if(s2.contains(parts1[i])) result1++;
 		}
-		return result;
+		
+		int result2 = 0;
+		String parts2[] = s2.split(" ");
+		for(int i=0;i<parts2.length;i++)
+		{
+			if(s1.contains(parts2[i])) result2++;
+		}
+		if(result1>result2)
+			return result1;
+		else
+			return result2;
 	}
 	
 	// code for Levenshtein distance -- from Wiki

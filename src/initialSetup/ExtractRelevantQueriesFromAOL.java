@@ -18,7 +18,7 @@ public class ExtractRelevantQueriesFromAOL {
 		queries = new HashMap<String, Query>();
 		BufferedReader br1 = new BufferedReader(new FileReader("data/AOLtasks/merged"));
 		String line1 = br1.readLine();
-		BufferedReader br2 = new BufferedReader(new FileReader("data/AOLtasks/all-tasks_demo.txt"));
+		BufferedReader br2 = new BufferedReader(new FileReader("data/AOLtasks/all-tasks.txt"));
 		String line2 = br2.readLine();
 		//117514	1	1	1	garden botanika.com
 		//user-ct-test-collection-06.txt:117514	garden botanika.com	2006-03-01 14:23:17	1	http://www.redtagdeals.com
@@ -76,11 +76,13 @@ public class ExtractRelevantQueriesFromAOL {
 			System.out.println(q.urls.size()+"______"+q.query+"_"+q.userID+"_"+"_"+q.getqTime());
 		}
 		
-		FileOutputStream fos = new FileOutputStream("data/AOLtasks/queriesMapFromAOL_Gold_demo");
+		//FileOutputStream fos = new FileOutputStream("data/AOLtasks/queriesMapFromAOL_Gold_demo");
+		FileOutputStream fos = new FileOutputStream("data/AOLtasks/queriesMapFromAOL_Gold");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(queries);
 
 		fos.close();
+		System.out.println("Written queriesMapFromAOL_Gold to disk");
 	}
 
 }

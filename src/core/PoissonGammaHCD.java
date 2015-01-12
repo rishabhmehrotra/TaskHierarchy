@@ -30,7 +30,7 @@ public class PoissonGammaHCD {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 2;
+		int stage = 1;
 		
 		if(stage == 1)
 		{
@@ -155,7 +155,7 @@ public class PoissonGammaHCD {
 				//System.out.println("Tree added to the heap: L="+m.likelihood+" S="+m.bayesFactorScore+" X="+m.getX().treeID+" Y="+m.getY().treeID);
 				//if(m.likelihood > 10000) {System.out.println(m.likelihood); System.exit(0);}
 			}
-			//System.out.println("Initializing heap; progress:"+i+"/"+forrest.size());
+			System.out.println("Initializing heap; progress:"+i+"/"+forrest.size());
 		}
 		System.out.println("Done with Heap Initialization; "+heap.size()+" trees added to the heap.\n");
 		//System.exit(0);

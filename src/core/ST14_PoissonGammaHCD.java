@@ -30,7 +30,7 @@ public class ST14_PoissonGammaHCD {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 1;
+		int stage = 2;
 		
 		if(stage == 1)
 		{
@@ -53,7 +53,7 @@ public class ST14_PoissonGammaHCD {
 		{
 			loadFinalTree();
 			System.out.println("Loaded tree: "+finalTree.nChildren);
-			new ComputePairwiseFRPScoresOnAOL(finalTree);
+			//new ComputePairwiseFRPScoresOnAOL(finalTree);
 			printTree();
 		}
 		
@@ -405,8 +405,7 @@ public class ST14_PoissonGammaHCD {
 			double affinity3 = getGammaPosterior(alpha3, beta3, r3);
 			likelihood = affinity1*affinity2*affinity3;
 			//System.out.println("Inside getTreeLikelihood for a leaf: "+likelihood+" "+affinity1+" "+affinity2+" "+affinity3);
-			//return likelihood;//we donot assign this likelihood to the tree here coz the function calling it would be doing it anyway
-			return 1;
+			return likelihood;//we donot assign this likelihood to the tree here coz the function calling it would be doing it anyway
 		}
 		else // if its not a leaf, then its a merge tree,
 		{

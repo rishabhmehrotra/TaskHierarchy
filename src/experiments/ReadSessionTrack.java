@@ -75,8 +75,23 @@ public class ReadSessionTrack {
 		}
 		System.out.println("total no of queries added to queryList: "+queryList.size());
 		System.out.println("total no of docs added overall: "+c);
+		
+		populateWordHashMaps();
+		
 		saveQueryList();
 		System.out.println("QueryList from Session Track saved to file");
+	}
+	
+	public static void populateWordHashMaps()
+	{
+		System.out.println("populating word maps for each query...");
+		Iterator<Query> itr = queryList.iterator();
+		while(itr.hasNext())
+		{
+			Query q = itr.next();
+			q.populateWordsInDocHashMap();
+		}
+		System.out.println("Done with populating word maps for each query!!");
 	}
 	
 	public static void saveQueryList() throws IOException

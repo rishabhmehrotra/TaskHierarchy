@@ -584,6 +584,7 @@ public class ST14_PoissonGammaHCD {
 		
 		// snippets common words & title common words
 		int temp6 = 0;
+		/*
 		int nSnippet = 0, nTitle = 0;
 		Iterator<Document> itr1 = q1.documents.iterator();
 		while(itr1.hasNext())
@@ -604,10 +605,25 @@ public class ST14_PoissonGammaHCD {
 		if(nSAvg+nTAvg > 20) temp6 = 10;
 		else if(nSAvg+nTAvg > 10) temp6 = 7;
 		else temp6 = nSAvg+nTAvg;
-		
+		*/
+		Iterator<String> itr = q1.wordsInDocumentsSnippets.keySet().iterator();
+		while(itr.hasNext())
+		{
+			String word = itr.next();
+			if(stopWords.containsKey(word)) continue;
+			if(q2.wordsInDocumentsSnippets.containsKey(word)) temp6++;
+		}
+		Iterator<String> itr1 = q1.wordsInDocumentsTitle.keySet().iterator();
+		while(itr1.hasNext())
+		{
+			String word = itr1.next();
+			if(stopWords.containsKey(word)) continue;
+			if(q2.wordsInDocumentsTitle.containsKey(word)) temp6++;
+		}
 		//result = temp1 + temp2 + temp3 + temp4 + temp5;
-		result = temp6;
-		if(result>5) result = 1; else result = 0;
+		result = temp6/50;
+		//System.out.println("--------------------------------------------------------"+result);
+		if(result>3) result = 1; else result = 0;
 		return result;
 	}
 	
@@ -641,7 +657,7 @@ public class ST14_PoissonGammaHCD {
 			if(s2.contains(parts1[i])) result1++;
 		}
 		
-		int result2 = 0;
+		/*int result2 = 0;
 		String parts2[] = s2.split(" ");
 		for(int i=0;i<parts2.length;i++)
 		{
@@ -651,6 +667,8 @@ public class ST14_PoissonGammaHCD {
 			return result1;
 		else
 			return result2;
+			*/
+		return result1;
 	}
 	
 	// code for Levenshtein distance -- from Wiki

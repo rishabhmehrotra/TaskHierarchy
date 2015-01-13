@@ -25,20 +25,25 @@ public class UserSession implements Serializable{
 	
 	public void populateSelfTrainTestQueriesForTermPrediction()
 	{
+		this.selfTrain = new HashMap<String, Query>();
+		this.selfTest = new HashMap<String, Query>();
 		Iterator<Query> itr = this.queries.iterator();
 		int count = 0, size = this.queries.size();
 		while(itr.hasNext())
 		{
 			Query q = itr.next();
-			if(count<(size/5))
+			if(count<(size/4))
 				this.selfTrain.put(q.query,q);
 			else
 				this.selfTest.put(q.query,q);
+			count++;
 		}
 	}
 	
 	public void populateSelfTrainTestBoW()
 	{
+		this.selfTrainBoW = new HashMap<String, Integer>();
+		this.selfTestBoW = new HashMap<String, Integer>();
 		// TRAIN part
 		Iterator<String> itr = this.selfTrain.keySet().iterator();
 		while(itr.hasNext())

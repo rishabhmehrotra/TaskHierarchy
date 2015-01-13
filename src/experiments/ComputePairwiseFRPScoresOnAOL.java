@@ -47,17 +47,22 @@ public class ComputePairwiseFRPScoresOnAOL {
 		System.out.println("Size of the queue:"+q.size()+"\n\n===========\n\n");
 		//System.exit(0);
 		Iterator<Tree> itr = q.iterator();
+		int c=0, sum=0;
 		while(itr.hasNext())
 		{
+			c++;
 			Tree t = itr.next();
-			System.out.println(t.nodeList.size()+"__"+t.nChildren);
-			Iterator<datastr.Node> it = t.nodeList.iterator();
+			System.out.println(c+":\t"+t.nodeList.size()+"__"+t.nChildren);
+			sum+=t.nodeList.size();
+			/*Iterator<datastr.Node> it = t.nodeList.iterator();
 			while(it.hasNext())
 			{
 				datastr.Node n = it.next();
 				System.out.print(n.q.query+"\n");
 			}
 			System.out.println("\n\n\n========\n\n\n");
+			*/
 		}
+		System.out.println(sum);
 	}
 }

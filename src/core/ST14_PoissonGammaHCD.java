@@ -30,7 +30,7 @@ public class ST14_PoissonGammaHCD {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 1;
+		int stage = 2;
 		
 		if(stage == 1)
 		{
@@ -53,8 +53,8 @@ public class ST14_PoissonGammaHCD {
 		{
 			loadFinalTree();
 			System.out.println("Loaded tree: "+finalTree.nChildren);
-			//new ComputePairwiseFRPScoresOnAOL(finalTree);
-			printTree();
+			new ComputePairwiseFRPScoresOnAOL(finalTree);
+			//printTree();
 		}
 		
 		

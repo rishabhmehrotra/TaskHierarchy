@@ -30,7 +30,7 @@ public class ST14_PoissonGammaHCD {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 2;
+		int stage = 1;
 		
 		if(stage == 1)
 		{
@@ -150,7 +150,7 @@ public class ST14_PoissonGammaHCD {
 					if(m.likelihood == -1)
 					{
 						//System.out.println("Skipped inside initial heap population");
-						continue;
+						//continue;
 					}
 				// now we have the Pm (likelihood) for this merged tree...
 				// next we need to compute the score for this tree
@@ -232,8 +232,16 @@ public class ST14_PoissonGammaHCD {
 			//else do nothing, the element has already been popped out from the PriorityQueue
 		}
 		temp1++;
-		if(temp1%1000 == 0) System.out.println("Inside FindHierCom function, heap size: "+heap.size());
+		//if(temp1%1000 == 0)
+			System.out.println("Inside FindHierCom function, heap size: "+heap.size());
 		System.out.println("The maximum tree size seen during the hierarchy building: "+maxTreeSize);
+		System.out.println("Done with hierarchy...finalTree size: "+finalTree.nodeList.size()+"\nForrest size now: "+forrest.size());
+		Iterator<Tree> itt = forrest.iterator();
+		while(itt.hasNext())
+		{
+			Tree t = itt.next();
+			System.out.println("~~ "+t.nodeList.size());
+		}
 	}
 	
 	public static Tree mergeTrees(Tree I, Tree J)

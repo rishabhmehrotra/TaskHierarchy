@@ -25,10 +25,11 @@ public class TermPredictionOnAOLUserSessions {
 		loadRestTreesInForrest();
 		addRestTreesInForrestToTaskList();
 		System.out.println("Done with loading/populating rest trees in the forrest to the taskList...we have the taskList with "+taskList.size()+" trees..\nGoing to populate BoW for each task in the taskList");
-		System.exit(0);
+		//System.exit(0);
 		// for each task in the taskList, we populate the BoW from queries in the tasks
 		populateBoWForEachTaskInTaskList();
 		System.out.println("Done with populating BoW in taskList...\nGoing to do term Prediction");
+		//System.exit(0);
 		// now we have the userSessions as well as the tasks, we need to evaluate the term prediction
 		// Step 1: for each session, we use its train part to find the closest task 
 		// Step 2: then use that task to predict terms and see how many can be retrieved
@@ -129,7 +130,8 @@ public class TermPredictionOnAOLUserSessions {
 			Tree t = itr.next();
 			// now t is the current task in consideration
 			int common = 0;
-			Iterator<Query> itr1 = us.queries.iterator();
+			//Iterator<Query> itr1 = us.queries.iterator();
+			Iterator<Query> itr1 = us.selfTrain.values().iterator();
 			while(itr1.hasNext())
 			{
 				Query q = itr1.next();

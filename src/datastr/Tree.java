@@ -51,10 +51,12 @@ public class Tree implements Serializable {
 	{
 		this.querywords = new HashMap<String, Integer>();
 		Iterator<Node> itr = this.nodeList.iterator();
+		//System.out.println("--------------------------------");
 		while(itr.hasNext())
 		{
 			Node n = itr.next();
-			String query = n.q.query;
+			String query = n.q.query.toLowerCase();
+			//System.out.print(query+"___");
 			String parts[] = query.split(" ");
 			for(int i=0;i<parts.length;i++)
 			{
@@ -69,7 +71,14 @@ public class Tree implements Serializable {
 				}
 			}
 		}
-		//System.out.println("Populated tree with "+this.querywords.size()+" query words");
+		/*System.out.println();
+		Iterator<String> itr1 = this.querywords.keySet().iterator();
+		while(itr1.hasNext())
+		{
+			System.out.print(itr1.next()+"==");
+		}
+		System.out.println("Populated tree with "+this.querywords.size()+" query words");
+		*/
 	}
 	
 	

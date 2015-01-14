@@ -32,10 +32,10 @@ public class UserSession implements Serializable{
 		while(itr.hasNext())
 		{
 			Query q = itr.next();
-			if(count<(size/4))
-				this.selfTrain.put(q.query,q);
+			if(count<(size/2))
+				this.selfTrain.put(q.query.toLowerCase(),q);
 			else
-				this.selfTest.put(q.query,q);
+				this.selfTest.put(q.query.toLowerCase(),q);
 			count++;
 		}
 	}

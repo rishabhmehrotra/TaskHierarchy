@@ -103,7 +103,8 @@ public class TermPrediction_ViaQCWCC_OnAOLUserSessions {
 			Tree t = itr.next();
 			// now t is the current task in consideration
 			int common = 0;
-			Iterator<Query> itr1 = us.queries.iterator();
+			//Iterator<Query> itr1 = us.queries.iterator();
+			Iterator<Query> itr1 = us.selfTrain.values().iterator();
 			while(itr1.hasNext())
 			{
 				Query q = itr1.next();

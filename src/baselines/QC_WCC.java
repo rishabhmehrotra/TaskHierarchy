@@ -75,6 +75,11 @@ public class QC_WCC {
 				Node n = new Node(nodeID++);
 				n.setQ(q);
 				rest.addNode(n);
+				if(rest.nodeList.size()>10)
+				{
+					taskList.add(rest);
+					rest = new Tree(treeID++);
+				}
 				continue;// redundant??
 			}
 			else

@@ -30,7 +30,7 @@ public class ST14_PoissonGammaHCD {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 2;
+		int stage = 1;
 		
 		if(stage == 1)
 		{
@@ -48,6 +48,7 @@ public class ST14_PoissonGammaHCD {
 			findHierarchicalCommunities();
 			System.out.println("Done with FindHierComm... heap size: "+heap.size());
 			saveFinalTree(finalTree);
+			saveOtherTreesLeftInTheForrest();
 		}
 		else
 		{
@@ -150,7 +151,7 @@ public class ST14_PoissonGammaHCD {
 					if(m.likelihood == -1)
 					{
 						//System.out.println("Skipped inside initial heap population");
-						//continue;
+						continue;
 					}
 				// now we have the Pm (likelihood) for this merged tree...
 				// next we need to compute the score for this tree
@@ -787,6 +788,28 @@ public class ST14_PoissonGammaHCD {
 		FileOutputStream fos = new FileOutputStream("data/finalTreeObtainedbyBHCD_SessionTrack2014_full");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(t);
+		fos.close();
+	}
+	
+	public static void saveOtherTreesLeftInTheForrest() throws IOException
+	{
+		ArrayList<Tree> rest = new ArrayList<Tree>();
+		Iterator<Tree> itr = forrest.iterator();
+		int c=0;
+		while(itr.hasNext())
+		{
+			Tree t = itr.next();
+			if(!(t.treeID == finalTree.treeID))
+			{
+				rest.add(t);
+				c++;
+				System.out.println("Adding tree with "+t.nodeList.size()+" to the rest list");
+			}
+		}
+		System.out.println("Saving rest tree list to disk with size/no of trees: "+rest.size());
+		FileOutputStream fos = new FileOutputStream("data/restTrees_SessionTrack2014_full");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(rest);
 		fos.close();
 	}
 	

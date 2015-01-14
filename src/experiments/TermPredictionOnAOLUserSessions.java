@@ -9,6 +9,7 @@ public class TermPredictionOnAOLUserSessions {
 	public static HashMap<String, UserSession> userSessionsMap;
 	public static ArrayList<Tree> taskList = new ArrayList<Tree>();// populated when we flatten the hierarchy
 	public static Tree STHierarchyTree;
+	public static ArrayList<Tree> restTreesInForrest;
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		loadPrunedUserSessionsFromDisk();
@@ -20,7 +21,11 @@ public class TermPredictionOnAOLUserSessions {
 		System.out.println("Loaded the tree, now going to flatten it...");
 		// now convert the hierarchy to a flat list of tasks/trees wherein each tree will have a list of nodes
 		flattenHierarchy();
-		System.out.println("Done with the flatening of the hierarchy...we have the taskList with "+taskList+" trees...\nGoing to populate BoW in taskList");
+		System.out.println("Done with the flatening of the hierarchy...we have the taskList with "+taskList.size()+" trees...\nGoing to load & populate rest trees in forrest to taskList");
+		loadRestTreesInForrest();
+		addRestTreesInForrestToTaskList();
+		System.out.println("Done with loading/populating rest trees in the forrest to the taskList...we have the taskList with "+taskList.size()+" trees..\nGoing to populate BoW for each task in the taskList");
+		System.exit(0);
 		// for each task in the taskList, we populate the BoW from queries in the tasks
 		populateBoWForEachTaskInTaskList();
 		System.out.println("Done with populating BoW in taskList...\nGoing to do term Prediction");
@@ -28,6 +33,24 @@ public class TermPredictionOnAOLUserSessions {
 		// Step 1: for each session, we use its train part to find the closest task 
 		// Step 2: then use that task to predict terms and see how many can be retrieved
 		termPredictionForEachSession();
+	}
+	
+	public static void addRestTreesInForrestToTaskList()
+	{
+		Iterator<Tree> itr = restTreesInForrest.iterator();
+		while(itr.hasNext())
+		{
+			Tree t = itr.next();
+			taskList.add(t);
+		}
+	}
+	
+	public static void loadRestTreesInForrest() throws IOException, ClassNotFoundException
+	{
+		FileInputStream fis = new FileInputStream("data/restTrees_SessionTrack2014_full");
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        restTreesInForrest = (ArrayList<Tree>) ois.readObject();
+        ois.close();
 	}
 	
 	public static void populateBoWForEachTaskInTaskList()

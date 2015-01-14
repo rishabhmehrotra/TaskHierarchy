@@ -2,8 +2,6 @@ package baselines;
 import java.io.*;
 import java.util.*;
 
-
-
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity;
 import datastr.*;
@@ -19,11 +17,13 @@ import externalUtil.*;
  */
 public class QC_WCC {
 
-	public static ArrayList<Task> taskList = new ArrayList<Task>();
+	public static ArrayList<Tree> taskList = new ArrayList<Tree>();
 	public static ArrayList<Query> queryList;
 	public static double qNetwork[][];
 	public static int networkSize;
 	public static String graphFile = "data/QCWCCGraphFileForCC";
+	public static int treeID = 1;
+	public static int nodeID =1;
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
 		/*String s1 = "test1", s2 = "test2";
@@ -46,38 +46,88 @@ public class QC_WCC {
 		populateGraphFileForConnectedComponents(nEdges);
 		System.out.println("Done with populating the graphFile on disk...\nGoing to find connected components now...");
 		// Step 3; Find connected components of the graph
-		findConnectedComponentsOfGraph();
+		externalUtil.Queue<Integer>[] components = findConnectedComponentsOfGraph();
 		// Step 4: Populate the taskList from the connected components found
+		populateTaskListFromCC(components);
+		System.out.println("Done with populating the taskList generated from QCWCC baseline...\nGoing to save the taskList to disk.");
+		saveTaskListToDisk();
+		System.out.println("Saved the taskList obtained via QCWCC to disk...");
 	}
 	
-	private static void findConnectedComponentsOfGraph()
+	public static void saveTaskListToDisk() throws IOException
+	{
+		FileOutputStream fos = new FileOutputStream("data/taskListObtainedViaQCWCC");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(taskList);
+		fos.close();
+	}
+
+	public static void populateTaskListFromCC(externalUtil.Queue<Integer>[] components)
+	{
+		Tree rest =  new Tree(treeID++);
+		int size = components.length;
+		for (int i = 0; i < size; i++)
+		{
+			if(components[i].size() == 1)
+			{
+				int posn = components[i].dequeue();
+				Query q = queryList.get(posn);
+				Node n = new Node(nodeID++);
+				n.setQ(q);
+				rest.addNode(n);
+				continue;// redundant??
+			}
+			else
+			{
+				Tree t = new Tree(treeID++);
+				for (int v : components[i])
+				{
+					StdOut.print(v + " ");
+					// now we need the query which is at position v in the session track queryList
+					Query q = queryList.get(v);
+					Node n = new Node(nodeID);
+					n.setQ(q);
+					t.addNode(n);
+				}
+				taskList.add(t);
+				System.out.println("\nConfirming size: "+t.nodeList.size());
+			}
+		}
+		taskList.add(rest);
+		System.out.println("Size of rest task: "+rest.nodeList.size());
+		System.out.println("Final size of taskList: "+taskList.size());
+	}
+
+	private static  externalUtil.Queue<Integer>[] findConnectedComponentsOfGraph()
 	{
 		In in = new In(graphFile);
-        Graph G = new Graph(in);
-        CC cc = new CC(G);
-        
-        // number of connected components
-        int M = cc.count();
-        System.out.println("No of connected components: "+M);
-     // compute list of vertices in each connected component
-        externalUtil.Queue<Integer>[] components = (externalUtil.Queue<Integer>[]) new externalUtil.Queue[M];
-        for (int i = 0; i < M; i++) {
-            components[i] = new externalUtil.Queue<Integer>();
-        }
-        for (int v = 0; v < G.V(); v++) {
-            components[cc.id(v)].enqueue(v);
-        }
+		Graph G = new Graph(in);
+		CC cc = new CC(G);
 
-        // print results
-        int temp=0;
-        for (int i = 0; i < M; i++) {
-            //for (int v : components[i]) {
-              //  StdOut.print(v + " ");
-            //}
-            StdOut.println(components[i].size());
-            if(components[i].size() > 1) temp++;
-        }
-        System.out.println("----"+temp);
+		// number of connected components
+		int M = cc.count();
+		System.out.println("No of connected components: "+M);
+		// compute list of vertices in each connected component
+		externalUtil.Queue<Integer>[] components = (externalUtil.Queue<Integer>[]) new externalUtil.Queue[M];
+		for (int i = 0; i < M; i++) {
+			components[i] = new externalUtil.Queue<Integer>();
+		}
+		for (int v = 0; v < G.V(); v++) {
+			components[cc.id(v)].enqueue(v);
+		}
+
+		// print results
+		int temp=0;
+		for (int i = 0; i < M; i++) {
+			//for (int v : components[i]) {
+			//  StdOut.print(v + " ");
+			//}
+			StdOut.println(components[i].size());
+			if(components[i].size() > 1) temp++;
+		}
+		System.out.println("----"+temp);
+		System.out.println(M+"--"+components.length);
+		return components;
 	}
 
 	public static void populateGraphFileForConnectedComponents(int nEdges) throws IOException
@@ -95,7 +145,7 @@ public class QC_WCC {
 		}
 		out.close();
 	}
-	
+
 	public static int pruneBasedonThresholdSimilarity(double threshold)
 	{
 		// only keep those edges which are similar by more than the threshold value
@@ -156,7 +206,7 @@ public class QC_WCC {
 		ois.close();
 		System.out.println("Loaded queryList with: "+queryList.size()+" queries");
 	}
-	
+
 	public static double jaccardDistance(String a, String b)
 	{
 		double sim = 0;
@@ -170,7 +220,7 @@ public class QC_WCC {
 		//System.out.println(sim+"__"+common+"--"+union);
 		return sim;
 	}
-	
+
 	public static int unionSizeBetweenHashMaps(HashMap<String, String> h1, HashMap<String, String> h2)
 	{
 		int unionSize = 0;
@@ -183,7 +233,7 @@ public class QC_WCC {
 		unionSize = h2.size();
 		return unionSize;
 	}
-	
+
 	public static int commonElementsBetweenHashMap(HashMap<String, String> h1, HashMap<String, String> h2)
 	{
 		int common = 0;
@@ -195,7 +245,7 @@ public class QC_WCC {
 		}
 		return common;
 	}
-	
+
 	public static HashMap<String, String>getTriGramsMapForString(String s)
 	{
 		HashMap<String, String> trigrams = new HashMap<String, String>();

@@ -2,9 +2,12 @@ package baselines;
 import java.io.*;
 import java.util.*;
 
+
+
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity;
 import datastr.*;
+import externalUtil.*;
 /* This class implements the baseline work for extracting task clusters based on Lucchese's WSDM 2011 paper
  * The algorithm first constructs a graph of all the queries with edge weights being the similarities between the queries
  * then it prunes the edges based on a threshold edge weight following which it finds connected components of the graph 
@@ -20,10 +23,12 @@ public class QC_WCC {
 	public static ArrayList<Query> queryList;
 	public static double qNetwork[][];
 	public static int networkSize;
+	public static String graphFile = "data/QCWCCGraphFileForCC";
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
-		//jaccardDistance("test1", "test2");
-		//System.exit(0);
+		/*String s1 = "test1", s2 = "test2";
+		System.out.println(jaccardDistance(s1,s2)+"--------"+editDistance(s1,s2));
+		System.exit(0);*/
 		// Step 1: Load AOL_ST query list on which to find tasks
 		loadQueryList();
 
@@ -34,10 +39,75 @@ public class QC_WCC {
 
 		// Step 2a:
 		findSimilarityBetweenQueries();
-
+		// Step 2b:
+		double threshold = 0.30;
+		int nEdges = pruneBasedonThresholdSimilarity(threshold);
+		//System.out.println(nEdges);
+		populateGraphFileForConnectedComponents(nEdges);
+		System.out.println("Done with populating the graphFile on disk...\nGoing to find connected components now...");
 		// Step 3; Find connected components of the graph
+		findConnectedComponentsOfGraph();
 		// Step 4: Populate the taskList from the connected components found
+	}
+	
+	private static void findConnectedComponentsOfGraph()
+	{
+		In in = new In(graphFile);
+        Graph G = new Graph(in);
+        CC cc = new CC(G);
+        
+        // number of connected components
+        int M = cc.count();
+        System.out.println("No of connected components: "+M);
+     // compute list of vertices in each connected component
+        externalUtil.Queue<Integer>[] components = (externalUtil.Queue<Integer>[]) new externalUtil.Queue[M];
+        for (int i = 0; i < M; i++) {
+            components[i] = new externalUtil.Queue<Integer>();
+        }
+        for (int v = 0; v < G.V(); v++) {
+            components[cc.id(v)].enqueue(v);
+        }
 
+        // print results
+        for (int i = 0; i < M; i++) {
+            for (int v : components[i]) {
+                StdOut.print(v + " ");
+            }
+            StdOut.println();
+        }
+	}
+
+	public static void populateGraphFileForConnectedComponents(int nEdges) throws IOException
+	{
+		FileWriter fstream = new FileWriter(graphFile);
+		BufferedWriter out = new BufferedWriter(fstream);
+		out.write(networkSize+"\n");
+		out.write(nEdges+"\n");
+		for(int i=0;i<networkSize;i++)
+		{
+			for(int j=i+1;j<networkSize;j++)
+			{
+				if(qNetwork[i][j]>0) out.write(i+" "+j+"\n");
+			}
+		}
+		out.close();
+	}
+	
+	public static int pruneBasedonThresholdSimilarity(double threshold)
+	{
+		// only keep those edges which are similar by more than the threshold value
+		int c=0;
+		for(int i=0;i<networkSize;i++)
+		{
+			for(int j=i+1;j<networkSize;j++)
+			{
+				if(qNetwork[i][j]>threshold) {qNetwork[i][j] = 1;c++;}
+				else qNetwork[i][j] = 0;
+				//System.out.print(qNetwork[i][j]+"_");
+			}
+			//System.out.println(c);
+		}
+		return c;
 	}
 
 	public static void findSimilarityBetweenQueries()
@@ -45,15 +115,20 @@ public class QC_WCC {
 		networkSize = queryList.size();
 		qNetwork = new double[networkSize][networkSize];
 		// now populate the q-q similarity network
+		double avg = 0;int c=0;
 		for(int i=0;i<networkSize;i++)
 		{
 			qNetwork[i][i] = -1;
 			for(int j=i+1;j<networkSize;j++)// starts from i+1 coz the matrix is symmetric
 			{
+				// similarity = 1- distance
 				qNetwork[i][j] = findSimilarityBetweenQueryPair(queryList.get(i), queryList.get(j));
 				qNetwork[j][i] = qNetwork[i][j];
+				avg+= qNetwork[i][j];c++;
 			}
 		}
+		avg = avg/c;
+		System.out.println("Avg: "+avg);
 	}
 
 	public static double findSimilarityBetweenQueryPair(Query q1, Query q2)
@@ -63,8 +138,10 @@ public class QC_WCC {
 		double sim = 0;
 		double simL = editDistance(q1.query, q2.query);
 		double simJ = jaccardDistance(q1.query, q2.query);
-		System.out.println(simL+"-----"+simJ);
-		return sim;
+		//System.out.println(simL+"-----"+simJ);
+		//sim = (simL+simJ)/2;
+		sim = simJ;
+		return (1-sim);
 	}
 
 	public static void loadQueryList() throws IOException, ClassNotFoundException
@@ -133,7 +210,7 @@ public class QC_WCC {
 	}
 
 	// code for Levenshtein distance -- from Wiki
-	public static int editDistance(String a, String b)
+	public static double editDistance(String a, String b)
 	{
 		a = a.toLowerCase();
 		b = b.toLowerCase();
@@ -151,6 +228,9 @@ public class QC_WCC {
 				costs[j] = cj;
 			}
 		}
-		return costs[b.length()];
+		//return costs[b.length()];
+		// normalizing the distance by length of the bigger string
+		if(a.length()>b.length()) return (double)((double)costs[b.length()]/(double)a.length());
+		else return (double)((double)costs[b.length()]/(double)b.length());
 	}
 }

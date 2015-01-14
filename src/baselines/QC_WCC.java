@@ -69,12 +69,15 @@ public class QC_WCC {
         }
 
         // print results
+        int temp=0;
         for (int i = 0; i < M; i++) {
-            for (int v : components[i]) {
-                StdOut.print(v + " ");
-            }
-            StdOut.println();
+            //for (int v : components[i]) {
+              //  StdOut.print(v + " ");
+            //}
+            StdOut.println(components[i].size());
+            if(components[i].size() > 1) temp++;
         }
+        System.out.println("----"+temp);
 	}
 
 	public static void populateGraphFileForConnectedComponents(int nEdges) throws IOException

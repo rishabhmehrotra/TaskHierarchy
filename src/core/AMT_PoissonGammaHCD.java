@@ -10,7 +10,7 @@ import datastr.Tree;
 import experiments.ComputePairwiseFRPScoresOnAOL;
 
 // this class modified the existing BHCD algo & incorporates the Poisson-Gamma conjugate distribution model
-public class ST14_PoissonGammaHCD {
+public class AMT_PoissonGammaHCD {
 	
 	public static int sizeNetwork;
 	public static String networkDataFile = "data/qNetwork";
@@ -24,14 +24,15 @@ public class ST14_PoissonGammaHCD {
 	public static Tree finalTree;
 	public static ArrayList<Query> queryList;
 	public static HashMap<String, String> stopWords;
-	
+	 
 	public static int pruning = 2;// 0 no pruning, 1- all pruning, 2- just the tree merge based on size pruning
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		// the stages decide whether we want to run the first part of the code or just the second part of the code
-		int stage = 1;
-		System.setOut(new PrintStream(new BufferedOutputStream(new FileOutputStream("output.txt"))));
+		int stage = 2;
+		//System.setOut(new PrintStream(new BufferedOutputStream(new FileOutputStream("output.txt"))));
+		System.setOut(new PrintStream(new BufferedOutputStream(new FileOutputStream("output_printTree.txt"))));
 		if(stage == 1)
 		{
 			populateStopWordsHashMap();
@@ -55,7 +56,7 @@ public class ST14_PoissonGammaHCD {
 			loadFinalTree();
 			System.out.println("Loaded tree: "+finalTree.nChildren);
 			new ComputePairwiseFRPScoresOnAOL(finalTree);
-			//printTree();
+			printTree();
 		}
 		
 		
@@ -161,7 +162,7 @@ public class ST14_PoissonGammaHCD {
 				heap.add(m);
 				//System.out.println("Tree added to the heap: L="+m.likelihood+" S="+m.bayesFactorScore+" X="+m.getX().treeID+" Y="+m.getY().treeID);
 			}
-			System.out.println("Populating Initial heap...current i:"+i+" / "+forrest.size()+"___heapSize: "+heap.size());
+			if(i%100==0) System.out.println("Populating Initial heap...current i:"+i+" / "+forrest.size()+"___heapSize: "+heap.size());
 			//if(i==100) break;
 		}
 		System.out.println("Done with Heap Initialization; "+heap.size()+" trees added to the heap.\n");
@@ -173,7 +174,7 @@ public class ST14_PoissonGammaHCD {
 		// as of now we have populated the forrest and then for all pairs of trees in the forrest we have populated the corresponding merged trees in the heap/priorityQueue
 		int temp1=0;
 		int maxTreeSize = 0;
-		while(heap.size() > 0)
+		while(heap.size() > 20)
 		{
 			Tree I = heap.poll();
 			Tree X = I.getX();
@@ -222,7 +223,7 @@ public class ST14_PoissonGammaHCD {
 					//System.out.println("Tree added to the heap: L="+M.likelihood+" S="+M.bayesFactorScore+" X="+M.getX().treeID+" Y="+M.getY().treeID+" noNodes: "+M.nodeList.size());
 					//System.out.println("Current Heap Size: "+heap.size()+" no of nodes in M ryt now: "+M.nodeList.size()+"__nChildren: "+M.nChildren+" sizeNetwork: "+sizeNetwork);
 					temp = M.nodeList.size();
-					if(M.nodeList.size() == sizeNetwork || M.nodeList.size() == 866)
+					if(M.nodeList.size() == sizeNetwork || heap.size()<20/*M.nodeList.size() == 866*/)
 					{
 						finalTree = M;
 						System.out.println("Final tree -- "+M.childTrees.size()+"_"+M.nChildren);
@@ -235,7 +236,7 @@ public class ST14_PoissonGammaHCD {
 		}
 		temp1++;
 		//if(temp1%1000 == 0)
-			System.out.println("Inside FindHierCom function, heap size: "+heap.size());
+		System.out.println("Inside FindHierCom function, heap size: "+heap.size());
 		System.out.println("The maximum tree size seen during the hierarchy building: "+maxTreeSize);
 		System.out.println("Done with hierarchy...finalTree size: "+finalTree.nodeList.size()+"\nForrest size now: "+forrest.size());
 		Iterator<Tree> itt = forrest.iterator();
@@ -552,7 +553,7 @@ public class ST14_PoissonGammaHCD {
 		
 		// common URLs +++ editDistance: min & avg
 		int temp2 = 0, temp3 = 0, temp4 = 0;
-		/* ignoring the URLs as of now, instead just focusing on the documents
+		// ignoring the URLs as of now, instead just focusing on the documents
 		Iterator<String> itr = q1.urls.values().iterator();
 		int min = 1000, minSize = 0, avg=0, count=0;
 		while(itr.hasNext())
@@ -585,7 +586,7 @@ public class ST14_PoissonGammaHCD {
 			if(temp4<0) temp4=0;
 			temp3 = (1 - min/minSize)*10;
 		}
-		*/
+		//*/
 		
 		
 		// jaccard index between URLs
@@ -615,6 +616,7 @@ public class ST14_PoissonGammaHCD {
 		else if(nSAvg+nTAvg > 10) temp6 = 7;
 		else temp6 = nSAvg+nTAvg;
 		*/
+		/*
 		Iterator<String> itr = q1.wordsInDocumentsSnippets.keySet().iterator();
 		while(itr.hasNext())
 		{
@@ -629,8 +631,9 @@ public class ST14_PoissonGammaHCD {
 			if(stopWords.containsKey(word)) continue;
 			if(q2.wordsInDocumentsTitle.containsKey(word)) temp6++;
 		}
-		//result = temp1 + temp2 + temp3 + temp4 + temp5;
-		result = temp6/50;
+		*/
+		result = temp1 + temp2 + temp3 + temp4 + temp5;
+		//result = temp6/50;
 		//System.out.println("--------------------------------------------------------"+result);
 		if(result>3) result = 1; else result = 0;
 		return result;
@@ -723,12 +726,13 @@ public class ST14_PoissonGammaHCD {
 	
 	public static void printFirstLevelOfFinalTree(Tree t, int depth, BufferedWriter out) throws IOException
 	{
-		if(depth == 4) return;
+		int maxDepth = 10;
+		if(depth == maxDepth) return;
 		//System.out.println("inside print1stlevel: t: "+t.nodeList.size()+"_"+t.nChildren);
 		//System.out.println("Inside printFirstLevel: childTree size= "+t.childTrees.size());
 		Iterator<Tree> itr = t.childTrees.iterator();
 		Queue<Tree> q = new LinkedList<Tree>();
-		int maxDepth = 4;
+		
 		//System.out.println("----------------------------");
 		System.out.println();
 		while(itr.hasNext())

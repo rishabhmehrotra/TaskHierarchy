@@ -23,9 +23,10 @@ public class PoissonGammaHCD {
 	public static Tree finalTree;
 	public static ArrayList<Query> queryList;
 	public static String treeFile = "data/finalTreeObtainedbyBHCD_AOL";
-	public static String queryListFile = "data/queriesLISTFromAOL_Gold";
+	//public static String queryListFile = "data/queriesLISTFromAOL_Gold";
+	public static String queryListFile = "data/UserStudy_AOLQueryList";
 	
-	public static int pruning = 2;// 0 no pruning, 1- all pruning, 2- just the tree merge based on size pruning
+	public static int pruning = 1;// 0 no pruning, 1- all pruning, 2- just the tree merge based on size pruning
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
@@ -155,7 +156,7 @@ public class PoissonGammaHCD {
 				//System.out.println("Tree added to the heap: L="+m.likelihood+" S="+m.bayesFactorScore+" X="+m.getX().treeID+" Y="+m.getY().treeID);
 				//if(m.likelihood > 10000) {System.out.println(m.likelihood); System.exit(0);}
 			}
-			System.out.println("Initializing heap; progress:"+i+"/"+forrest.size());
+			if(i%100==0)System.out.println("Initializing heap; progress:"+i+"/"+forrest.size());
 		}
 		System.out.println("Done with Heap Initialization; "+heap.size()+" trees added to the heap.\n");
 		//System.exit(0);
@@ -190,7 +191,7 @@ public class PoissonGammaHCD {
 					// compute sigmaMM, where M is the possible merges of I & J
 					// now there are 3 possibilities to merge I & J, we calculate bayesFactorScore for each
 					// possibility and chose the one which has the maximum score -- all this is done inside mergeTrees
-					if(pruning == 2)
+					if(pruning == 2 || pruning == 1)
 					{
 						//int n1 = I.nChildren;
 						//int n2 = J.nChildren;
